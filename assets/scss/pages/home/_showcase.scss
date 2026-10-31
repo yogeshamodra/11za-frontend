@@ -130,3 +130,12 @@
         flex: initial;
     }
 }
+
+/* desktop: keep the demo videos a comfortable size instead of full container width */
+@media (min-width: 992px) {
+    .show-frame {
+        max-width: 992px;
+        margin-inline: auto;
+    }
+}
+
