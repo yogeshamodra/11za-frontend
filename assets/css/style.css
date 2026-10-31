@@ -2868,7 +2868,6 @@ footer {
   padding: 28px 16px;
   text-align: center;
   font-family: var(--font-body);
-  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.06em;
   color: var(--slate-600);
@@ -3855,6 +3854,161 @@ footer {
     font-size: 1.3rem;
   }
 }
+/* ============================================================ TESTIMONIALS */
+.testimonials {
+  border-top: 1px solid var(--border);
+}
+
+.tm-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 38px 32px 30px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+.tm-card:hover {
+  transform: translateY(-4px);
+}
+.tm-card blockquote {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  margin: 0 0 28px;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: var(--slate-800);
+}
+.tm-card figcaption {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+.tm-card figcaption strong {
+  display: block;
+  color: var(--slate-900);
+}
+.tm-card figcaption small {
+  color: var(--muted);
+}
+.tm-card.is-featured, .slick-center .tm-card {
+  border-color: transparent;
+  background: radial-gradient(420px 240px at 100% 0%, rgba(52, 211, 153, 0.3), transparent 70%), linear-gradient(135deg, #0b5d3b 0%, #064e3b 55%, #022c22 100%);
+}
+.tm-card.is-featured blockquote,
+.tm-card.is-featured figcaption strong, .slick-center .tm-card blockquote,
+.slick-center .tm-card figcaption strong {
+  color: #fff;
+}
+.tm-card.is-featured figcaption, .slick-center .tm-card figcaption {
+  border-top-color: rgba(255, 255, 255, 0.18);
+}
+.tm-card.is-featured figcaption small, .slick-center .tm-card figcaption small {
+  color: rgba(255, 255, 255, 0.7);
+}
+.tm-card.is-featured .tm-mark, .slick-center .tm-card .tm-mark {
+  color: rgba(255, 255, 255, 0.14);
+}
+.tm-card.is-featured .tm-avatar, .slick-center .tm-card .tm-avatar {
+  background: #fff;
+  color: var(--emerald-700);
+}
+
+.tm-mark {
+  position: absolute;
+  top: 6px;
+  right: 18px;
+  font-size: 6rem;
+  line-height: 1;
+  color: var(--emerald-100);
+  pointer-events: none;
+}
+
+.tm-avatar {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--emerald-500), var(--emerald-700));
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  .tm-card {
+    padding: 32px 24px 26px;
+  }
+  .tm-card blockquote {
+    font-size: 1.1rem;
+  }
+}
+/* slider (Slick) */
+.tm-slider {
+  margin: 40px -12px 0;
+}
+.tm-slider .slick-list {
+  padding: 16px 0 12px;
+}
+.tm-slider .tm-slide {
+  height: auto;
+  padding: 0 12px;
+}
+.tm-slider .tm-slide > .tm-card {
+  height: 100%;
+}
+.tm-slider .slick-track {
+  display: flex;
+}
+.tm-slider .slick-slide {
+  height: auto;
+}
+.tm-slider .slick-slide > div {
+  height: 100%;
+}
+.tm-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.tm-slider .slick-dots li {
+  line-height: 0;
+}
+.tm-slider .slick-dots button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--emerald-200);
+  font-size: 0;
+  transition: width 0.25s ease, background 0.25s ease;
+}
+.tm-slider .slick-dots .slick-active button {
+  width: 28px;
+  border-radius: 6px;
+  background: var(--emerald-600);
+}
+
+.tm-google:not([hidden]) {
+  margin-top: 40px;
+}
+
 /* ============================================================ ABOUT PAGE
    Light sections alternate green (--sec-green) and white (--sec-white).
    Headings pick up --font-heading from base; colours come from the shared tokens. */
@@ -4563,7 +4717,6 @@ body {
   background: var(--sec-white);
 }
 
-#showcase,
 #integrations,
 .latest-case-studies {
   background: var(--sec-green);

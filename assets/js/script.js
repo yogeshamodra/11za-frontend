@@ -259,3 +259,27 @@ $(document).ready(function () {
   render();
   setTimeout(typing, 400);
 });
+
+/* Testimonials slider */
+$(document).ready(function () {
+  var $slider = $(".tm-slider");
+  if (!$slider.length || !$.fn.slick) return;
+
+  $slider.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "0px",
+    infinite: true,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 4500,
+    speed: 500,
+    pauseOnHover: true,
+    responsive: [
+      { breakpoint: 992, settings: { slidesToShow: 2, centerMode: false } },
+      { breakpoint: 640, settings: { slidesToShow: 1, centerMode: false } }
+    ]
+  });
+});
