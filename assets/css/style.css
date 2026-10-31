@@ -2526,7 +2526,7 @@ footer {
   width: 0.05em;
   min-width: 2px;
   height: 0.95em;
-  background: #86efac;
+  background: var(--emerald-600);
   animation: cursorBlink 0.9s steps(1) infinite;
 }
 
@@ -2558,7 +2558,7 @@ footer {
 .hero-section {
   position: relative;
   overflow: hidden;
-  color: #fff;
+  color: var(--slate-900);
   min-height: 100vh;
   min-height: 100svh;
   display: flex;
@@ -2598,8 +2598,9 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--emerald-300);
+  color: var(--emerald-800);
   padding: 0.45rem 1rem;
   border-radius: 50px;
   font-weight: 600;
@@ -2611,8 +2612,8 @@ footer {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #4ade80;
-  box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.25);
+  background: var(--emerald-500);
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.25);
 }
 
 .hero-section h1 {
@@ -2623,7 +2624,7 @@ footer {
 }
 
 .hero-section .grad {
-  background: linear-gradient(90deg, #86efac, #fde68a);
+  background: linear-gradient(90deg, #064e3b, #059669);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -2631,33 +2632,33 @@ footer {
 
 .lead2 {
   font-size: 1.15rem;
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--slate-700);
 }
 
 .btn-lite {
-  background: #fff;
-  color: #065f3f;
+  background: var(--emerald-600);
+  color: #fff;
   border-radius: 50px;
   padding: 0.85rem 1.8rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 30px rgba(5, 150, 105, 0.35);
 }
 
 .btn-lite:hover {
-  background: #eafff4;
-  color: #065f3f;
+  background: var(--emerald-700);
+  color: #fff;
   transform: translateY(-2px);
 }
 
 .btn-outline-lite {
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  color: #fff;
+  border: 2px solid var(--emerald-700);
+  color: var(--emerald-800);
   border-radius: 50px;
   padding: 0.8rem 1.8rem;
 }
 
 .btn-outline-lite:hover {
-  background: #fff;
-  color: #065f3f;
+  background: var(--emerald-700);
+  color: #fff;
 }
 
 .checks li {

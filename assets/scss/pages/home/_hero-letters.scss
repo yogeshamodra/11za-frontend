@@ -26,7 +26,7 @@
         width: 0.05em;
         min-width: 2px;
         height: 0.95em;
-        background: #86efac;
+        background: var(--emerald-600);
         animation: cursorBlink 0.9s steps(1) infinite;
     }
 }

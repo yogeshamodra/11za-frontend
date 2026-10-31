@@ -171,8 +171,8 @@ $(document).ready(function () {
   const h1 = document.querySelector(".hero-letters");
   if (!h1) return;
 
-  const from = [134, 239, 172]; // #86efac
-  const to = [253, 230, 138]; // #fde68a
+  const from = [6, 78, 59]; // #064e3b
+  const to = [5, 150, 105]; // #059669
   let index = 0;
 
   function build(node, isGrad, gradStart, gradLen) {
