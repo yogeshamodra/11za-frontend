@@ -27,6 +27,7 @@ h6,
 .font-display,
 .font-heading {
     font-family: var(--font-heading);
+    font-synthesis: none; /* Hedvig has one weight: no fake bold */
 }
 
 .mono,

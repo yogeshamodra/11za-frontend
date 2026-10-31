@@ -166,7 +166,7 @@
     $(window).on("scroll", updateHeader);
 });
 
-/* Hero heading: split into letters so they fall in one by one */
+/* Hero heading: split into letters for the continuous typewriter effect */
 $(document).ready(function () {
   const h1 = document.querySelector(".hero-letters");
   if (!h1) return;
@@ -207,6 +207,7 @@ $(document).ready(function () {
     return frag;
   }
 
+  h1.classList.add("is-split");
   h1.setAttribute("aria-label", h1.textContent.trim().replace(/\s+/g, " "));
   Array.from(h1.childNodes).forEach(function (node) {
     if (node.nodeType === 3) {
@@ -219,4 +220,42 @@ $(document).ready(function () {
       node.appendChild(frag);
     }
   });
+
+  /* continuous typing: type -> hold -> delete -> repeat */
+  const chars = h1.querySelectorAll(".char");
+  if (!chars.length) return;
+
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    chars.forEach(function (c) { c.classList.add("on"); });
+    return;
+  }
+
+  const TYPE_MS = 75, DELETE_MS = 35, HOLD_MS = 2200, PAUSE_MS = 500;
+  const cursor = document.createElement("span");
+  cursor.className = "type-cursor";
+  cursor.setAttribute("aria-hidden", "true");
+  let n = 0;
+
+  function render() {
+    chars.forEach(function (c, i) { c.classList.toggle("on", i < n); });
+    if (n === 0) chars[0].before(cursor);
+    else chars[n - 1].after(cursor);
+  }
+
+  function typing() {
+    n++;
+    render();
+    if (n < chars.length) setTimeout(typing, TYPE_MS);
+    else setTimeout(deleting, HOLD_MS);
+  }
+
+  function deleting() {
+    n--;
+    render();
+    if (n > 0) setTimeout(deleting, DELETE_MS);
+    else setTimeout(typing, PAUSE_MS);
+  }
+
+  render();
+  setTimeout(typing, 400);
 });

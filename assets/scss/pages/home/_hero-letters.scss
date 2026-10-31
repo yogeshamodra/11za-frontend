@@ -1,36 +1,55 @@
-/* ---------- hero heading: letters fall one by one ---------- */
+/* ---------- hero heading: continuous typewriter (driven by script.js) ---------- */
 .hero-letters .word {
     display: inline-block;
     white-space: nowrap;
 }
 
+/* every letter keeps its space, so the heading never changes size */
 .hero-letters .char {
-    display: inline-block;
     opacity: 0;
-    transform: translateY(-1.2em);
-    animation: letterFall 0.6s var(--ease) forwards;
-    animation-delay: calc(var(--i) * 55ms + 150ms);
+
+    &.on {
+        opacity: 1;
+    }
 }
 
-@keyframes letterFall {
-    0% {
-        opacity: 0;
-        transform: translateY(-1.2em);
+.type-cursor {
+    position: relative;
+    display: inline-block;
+    width: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0.03em;
+        top: -0.9em;
+        width: 0.05em;
+        min-width: 2px;
+        height: 0.95em;
+        background: #86efac;
+        animation: cursorBlink 0.9s steps(1) infinite;
     }
-    70% {
-        opacity: 1;
-        transform: translateY(0.08em);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+}
+
+@keyframes cursorBlink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .hero-letters .char {
         opacity: 1;
-        transform: none;
-        animation: none;
     }
+
+    .type-cursor {
+        display: none;
+    }
+}
+
+/* letters are coloured one by one in script.js; the parent gradient would
+   show through letters that are not typed yet, so switch it off */
+.hero-letters.is-split .grad {
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
 }

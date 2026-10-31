@@ -39,14 +39,7 @@
       <nav class="container nav-inner" aria-label="Main navigation">
         <!-- LOGO -->
         <a href="index.html" class="brand" data-testid="nav-logo-11za">
-          <!-- <img
-            src="assets/images/11za_logo.svg"
-            alt=""
-            class="logo-icon"
-            width="120"
-            height="40"
-          /> -->
-          
+        
           <img
             src="assets/images/11ZA_new_logo.svg"
             alt=""
@@ -207,64 +200,10 @@
     </div>
 
     <main>
-      <section class="hero2" id="top">
-        <span class="blob b1"></span><span class="blob b2"></span>
-        <!-- LEFT SIDE ICONS -->
-        <!-- <div class="ico-fx ico-left" aria-hidden="true">
-         
-          <div class="ico solid i1">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"
-              />
-            </svg>
-          </div>
-         
-          <div class="ico i2">
-            <svg viewBox="0 0 24 24">
-              <path d="M6 6h15l-2 9H8L6 3H3" />
-              <circle cx="9" cy="20" r="1" />
-              <circle cx="18" cy="20" r="1" />
-            </svg>
-          </div>
-         
-          <div class="ico i3">
-            <svg viewBox="0 0 24 24">
-              <path d="M1 3h15v13H1z" />
-              <path d="M16 8h4l3 3v5h-7z" />
-              <circle cx="5.5" cy="18.5" r="2.5" />
-              <circle cx="18.5" cy="18.5" r="2.5" />
-            </svg>
-          </div>
-        </div> -->
-
-        <!-- RIGHT SIDE ICONS -->
-        <!-- <div class="ico-fx ico-right" aria-hidden="true">
-          
-          <div class="ico i4">
-            <svg viewBox="0 0 24 24">
-              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
-              <path d="M13.7 21a2 2 0 0 1-3.4 0" />
-            </svg>
-          </div>
-          
-          <div class="ico solid i5">
-            <svg viewBox="0 0 24 24">
-              <path d="M22 11v1a10 10 0 1 1-5.9-9.1" />
-              <path d="M22 4L12 14l-3-3" />
-            </svg>
-          </div>
-          
-          <div class="ico i6">
-            <svg viewBox="0 0 24 24">
-              <path d="M20 12v10H4V12" />
-              <path d="M2 7h20v5H2z" />
-              <path d="M12 22V7" />
-              <path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7z" />
-              <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
-            </svg>
-          </div>
-        </div> -->
+      <section class="hero-section" id="top">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+          <source src="assets/video/hero-video.mp4" type="video/mp4" />
+        </video>
         <div class="container position-relative" data-aos="fade-up">
           <div class="row align-items-center g-5">
             <div class="col-lg-9 mx-auto text-center text-white">
@@ -286,186 +225,102 @@
               </div>
             </div>
           </div>
-          <div
-            id="trust"
-            class="trust"
-            data-testid="trust-logo-cloud"
-            data-aos="fade-up"
-          >
-            <div class="">
-              <!-- <p class="trust-label reveal">
-                WhatsApp Blue Tick Verified Customers
-              </p> -->
+        </div>
+      </section>
 
-              <div class="marquee" aria-label="Customer logos">
-                <div class="marquee-track">
-                  <div>
-                    <img
-                      src="assets/images/growit.png"
-                      class="w-100"
-                      alt="Sakhiya Skin Care"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="assets/images/hisabkitab.png"
-                      class="w-100"
-                      alt="IVY Growth"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="assets/images/ivy.png"
-                      class="w-100"
-                      alt="Zorko"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="assets/images/mcat.png"
-                      class="w-100"
-                      alt="Stockbox"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="assets/images/rogue.png"
-                      class="w-100"
-                      alt="Hisabkitab"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="assets/images/pedalstart.png"
-                      class="w-100"
-                      alt="Marwari Catalyst"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="assets/images/sakhiya.png"
-                      class="w-100"
-                      alt="Marwari Catalyst"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+      <!-- ==================== TRUSTED BY ==================== -->
+      <section class="trusted-logos" id="trusted" aria-labelledby="trustedTitle">
+        <div class="logo-board">
+          <h2 id="trustedTitle" class="logo-board-title">
+            Trusted by growing businesses across India
+          </h2>
+          <div class="logo-row to-left">
+            <ul class="logo-track">
+              <li class="logo-cell"><img src="assets/images/growit.png" alt="Growit" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/hisabkitab.png" alt="Hisabkitab" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/ivy.png" alt="IVY Growth" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/mcat.png" alt="MCats" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/rogue.png" alt="Rogue" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/pedalstart.png" alt="Pedalstart" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/sakhiya.png" alt="Sakhiya" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/stockbox.png" alt="Stockbox" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/vogzy.png" alt="Vogzy" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/zorko.png" alt="Zorko" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/growit.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/hisabkitab.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/ivy.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/mcat.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/rogue.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/pedalstart.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/sakhiya.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/stockbox.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/vogzy.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/zorko.png" alt="" loading="lazy" /></li>
+            </ul>
+          </div>
+          <div class="logo-row to-right">
+            <ul class="logo-track">
+              <li class="logo-cell"><img src="assets/images/mcat.png" alt="MCats" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/rogue.png" alt="Rogue" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/pedalstart.png" alt="Pedalstart" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/sakhiya.png" alt="Sakhiya" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/stockbox.png" alt="Stockbox" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/vogzy.png" alt="Vogzy" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/zorko.png" alt="Zorko" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/growit.png" alt="Growit" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/hisabkitab.png" alt="Hisabkitab" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/ivy.png" alt="IVY Growth" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/mcat.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/rogue.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/pedalstart.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/sakhiya.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/stockbox.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/vogzy.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/zorko.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/growit.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/hisabkitab.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/ivy.png" alt="" loading="lazy" /></li>
+            </ul>
+          </div>
+          <div class="logo-row to-left">
+            <ul class="logo-track">
+              <li class="logo-cell"><img src="assets/images/sakhiya.png" alt="Sakhiya" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/stockbox.png" alt="Stockbox" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/vogzy.png" alt="Vogzy" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/zorko.png" alt="Zorko" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/growit.png" alt="Growit" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/hisabkitab.png" alt="Hisabkitab" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/ivy.png" alt="IVY Growth" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/mcat.png" alt="MCats" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/rogue.png" alt="Rogue" loading="lazy" /></li>
+              <li class="logo-cell"><img src="assets/images/pedalstart.png" alt="Pedalstart" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/sakhiya.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/stockbox.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/vogzy.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/zorko.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/growit.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/hisabkitab.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/ivy.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/mcat.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/rogue.png" alt="" loading="lazy" /></li>
+              <li class="logo-cell" aria-hidden="true"><img src="assets/images/pedalstart.png" alt="" loading="lazy" /></li>
+            </ul>
           </div>
         </div>
       </section>
 
       <!-- ==================== PROBLEM / SOLUTION ==================== -->
-      <!-- <section id="problem" class="section">
-        <div class="container">
-          <div class="sec-head text-center mx-auto">
-            <p class="chapter-label justify-content-center reveal">Core Capabilities</p>
-            <h2 class="font-heading reveal" data-delay="0.08">
-              Your customers are on WhatsApp.<span style="color: #09AF72 ;"> Your business should be too.</span>
-            </h2>
-            <p class="sub reveal" data-delay="0.16">
-              Growing businesses hit the same wall — conversations scale faster
-              than the tools holding them.
-            </p>
-          </div>
-          <div class="ps-grid">
-            <div class="ps-cards">
-              <div class="reveal">
-                <div class="p-card" data-testid="problem-card-0">
-                  <div class="top">
-                    <span class="p-ic"
-                      ><svg class="ic ic-17">
-                        <use href="#i-x-circle" /></svg></span
-                    ><span class="num">01</span>
-                  </div>
-                  <h3 class="font-heading">Conversations everywhere, control nowhere</h3>
-                  <p>
-                    Customer chats live on personal phones and the free Business
-                    app. No ownership, no history, no visibility when someone
-                    leaves.
-                  </p>
-                </div>
-              </div>
-              <div class="reveal" data-delay="0.08">
-                <div class="p-card" data-testid="problem-card-1">
-                  <div class="top">
-                    <span class="p-ic"
-                      ><svg class="ic ic-17">
-                        <use href="#i-x-circle" /></svg></span
-                    ><span class="num">02</span>
-                  </div>
-                  <h3 class="font-heading">Leads slip through the cracks</h3>
-                  <p>
-                    Slow manual replies and missed follow-ups quietly kill deals
-                    that were already warm and ready to buy.
-                  </p>
-                </div>
-              </div>
-              <div class="reveal" data-delay="0.16">
-                <div class="p-card" data-testid="problem-card-2">
-                  <div class="top">
-                    <span class="p-ic"
-                      ><svg class="ic ic-17">
-                        <use href="#i-x-circle" /></svg></span
-                    ><span class="num">03</span>
-                  </div>
-                  <h3 class="font-heading">Teams can't scale on one phone</h3>
-                  <p>
-                    One device, one person, zero routing. Growing volume means
-                    chaos, duplicated replies and burnt-out agents.
-                  </p>
-                </div>
-              </div>
-              <div class="reveal" data-delay="0.24">
-                <div class="p-card" data-testid="problem-card-3">
-                  <div class="top">
-                    <span class="p-ic"
-                      ><svg class="ic ic-17">
-                        <use href="#i-x-circle" /></svg></span
-                    ><span class="num">04</span>
-                  </div>
-                  <h3 class="font-heading">Broadcasts that risk your number</h3>
-                  <p>
-                    Unofficial bulk tools get numbers banned. Without the
-                    official API, every campaign is a gamble with your brand.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="reveal" data-delay="0.2" style="height: 100%">
-              <div class="solution-card" data-testid="solution-card-11za">
-                <div class="dots dot-grid-dark" aria-hidden="true"></div>
-                <div class="blob" aria-hidden="true"></div>
-                <div>
-                  <span class="chip-dark">The 11za way</span>
-                  <h3 class="font-heading">
-                    One number.<br> One inbox.<br> Every conversation under control.
-                  </h3>
-                  <p>
-                    11za puts your whole team on the official WhatsApp Business
-                    API — with automation, campaigns and analytics built in, so
-                    nothing slips and everything scales.
-                  </p>
-                </div>
-                <a
-                  href="https://calendly.com/engees/schedule-a-demo"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="link-arrow"
-                  data-testid="solution-cta-demo"
-                  >See how it works</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
+    
 
       <!-- Core Capabilities Section -->
       <!-- Core Capabilities Section with Book Demo CTA (No Form) -->
-      <!-- <section class="py-5 bg-light" id="capabilities" data-aos="fade-up">
+          <section
+        class="py-5 bg-light position-relative overflow-hidden"
+        id="capabilities"
+        data-aos="fade-up"
+      >
         <div class="container py-4">
-          
+          <!-- Section Header -->
           <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-8">
               <span
@@ -483,12 +338,12 @@
             </div>
           </div>
 
-         
+          <!-- Main Content Layout: Capabilities Grid (Left) + Animated Hero Demo Mockup (Right) -->
           <div class="row g-4 align-items-stretch">
-           
-            <div class="col-12 col-xl-8">
+            <!-- Left Column: 4 Capabilities Cards (2x2 Grid) -->
+            <div class="col-12 col-xl-7">
               <div class="row g-4">
-                
+                <!-- 1. Chat -->
                 <div class="col-12 col-md-6">
                   <div
                     class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
@@ -543,328 +398,6 @@
                   </div>
                 </div>
 
-               
-                <div class="col-12 col-md-6">
-                  <div
-                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
-                  >
-                    <div
-                      class="rounded-3 d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary fs-3 p-3 mb-4"
-                      style="width: 56px; height: 56px"
-                    >
-                      <i class="bi bi-megaphone-fill"></i>
-                    </div>
-                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Broadcast</h3>
-                    <ul
-                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
-                    >
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>Bulk Messaging:</strong> Reach thousands with
-                          targeted campaigns.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>Campaign Scheduler:</strong> Time broadcasts
-                          for peak response hours.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>Dynamic Variables:</strong> Personalize
-                          messages per user data.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>Real-time Analytics:</strong> Track open
-                          rates, delivery & failures.</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                
-                <div class="col-12 col-md-6">
-                  <div
-                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
-                  >
-                    <div
-                      class="rounded-3 d-inline-flex align-items-center justify-content-center fs-3 p-3 mb-4"
-                      style="
-                        width: 56px;
-                        height: 56px;
-                        background-color: rgba(147, 51, 234, 0.1);
-                        color: #9333ea;
-                      "
-                    >
-                      <i class="bi bi-robot"></i>
-                    </div>
-                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Automation</h3>
-                    <ul
-                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
-                    >
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>No-Code Bot Builder:</strong> Deploy 24/7
-                          interactive chatbots.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>Order Updates:</strong> Automatic receipts &
-                          shipping alerts.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>Abandoned Cart:</strong> Automated recovery
-                          reminders.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>Auto-Replies:</strong> Out-of-office &
-                          greeting triggers.</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-               
-                <div class="col-12 col-md-6">
-                  <div
-                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
-                  >
-                    <div
-                      class="rounded-3 d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning fs-3 p-3 mb-4"
-                      style="width: 56px; height: 56px"
-                    >
-                      <i class="bi bi-diagram-3-fill"></i>
-                    </div>
-                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Integration</h3>
-                    <ul
-                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
-                    >
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>E-Commerce:</strong> Direct Shopify &
-                          WooCommerce sync.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>CRM Connections:</strong> HubSpot, Zoho &
-                          Meta Lead Ads.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>Payment Gateways:</strong> Razorpay & Pabbly
-                          workflows.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span
-                          ><strong>Custom APIs:</strong> Webhooks for ERPs &
-                          external platforms.</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-        
-            <div class="col-12 col-xl-4">
-              <div
-                class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-dark text-white h-100 d-flex flex-column justify-content-between position-relative overflow-hidden"
-              >
-               
-                <div
-                  class="position-absolute top-0 end-0 bg-success opacity-20 rounded-circle"
-                  style="
-                    width: 200px;
-                    height: 200px;
-                    filter: blur(60px);
-                    margin-top: -50px;
-                    margin-right: -50px;
-                  "
-                ></div>
-                <div
-                  class="position-absolute bottom-0 start-0 bg-primary opacity-20 rounded-circle"
-                  style="
-                    width: 200px;
-                    height: 200px;
-                    filter: blur(60px);
-                    margin-bottom: -50px;
-                    margin-left: -50px;
-                  "
-                ></div>
-
-                <div class="position-relative z-1 my-auto">
-                  <h3 class="font-heading fw-bold display-6 text-white mb-3">
-                    Ready to transform your customer support & sales?
-                  </h3>
-                  <p class="text-secondary text-light opacity-75 fs-6 mb-4">
-                    Book a 1-on-1 walk-through with our WhatsApp API
-                    specialists. We'll show you how to automate workflows, set
-                    up chatbots, and run successful campaign broadcasts.
-                  </p>
-
-                  <ul
-                    class="list-unstyled d-flex flex-column gap-2 mb-4 text-light opacity-90 small"
-                  >
-                    <li class="d-flex align-items-center gap-2">
-                      <i class="bi bi-check2 text-success fw-bold fs-5"></i>
-                      <span>30-minute interactive live walkthrough</span>
-                    </li>
-                    <li class="d-flex align-items-center gap-2">
-                      <i class="bi bi-check2 text-success fw-bold fs-5"></i>
-                      <span>Custom pricing & integration strategy</span>
-                    </li>
-                    <li class="d-flex align-items-center gap-2">
-                      <i class="bi bi-check2 text-success fw-bold fs-5"></i>
-                      <span>WhatsApp Business API verification guide</span>
-                    </li>
-                  </ul>
-
-                  <div class="d-grid gap-3">
-                    <a
-                      href="#book-demo"
-                      class="btn btn-success btn-lg fw-bold py-3 shadow-sm d-flex align-items-center justify-content-center gap-2"
-                    >
-                      <span>Book a Live Demo</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section> -->
-      <section
-        class="py-5 bg-light position-relative overflow-hidden"
-        id="capabilities"
-        data-aos="fade-up"
-      >
-        <div class="container py-4">
-          <!-- Section Header -->
-          <div class="row justify-content-center text-center mb-5">
-            <div class="col-lg-8">
-              <span
-                class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-3"
-                >Platform Features</span
-              >
-              <h2 class="font-heading fw-bold display-6 text-dark mb-3">
-                Core Capabilities of 11za
-              </h2>
-              <p class="text-secondary lead fs-6">
-                Empower your WhatsApp communication with powerful tools for
-                customer chat, marketing broadcasts, intelligent automations,
-                and enterprise integrations.
-              </p>
-            </div>
-          </div>
-
-          <!-- Main Content Layout: Capabilities Grid (Left) + Animated Hero Demo Mockup (Right) -->
-          <div class="row g-4 align-items-stretch">
-            <!-- Left Column: 4 Capabilities Cards (2x2 Grid) -->
-            <div class="col-12 col-xl-7">
-              <div class="row g-4">
-                <!-- 1. Chat -->
-                <div class="col-12 col-md-6">
-                  <div
-                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
-                  >
-                    <div
-                      class="rounded-3 d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success fs-3 p-3 mb-4"
-                      style="width: 56px; height: 56px"
-                    >
-                      <i class="bi bi-chat-dots-fill"></i>
-                    </div>
-                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Chat</h3>
-                    <ul
-                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
-                    >
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span><strong>Shared Team Inbox:</strong> Single central
-                          WhatsApp API number.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span><strong>Auto-Assignment:</strong> Route chats based
-                          on agent load.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span><strong>Internal Notes:</strong> Tag teammates inside
-                          conversation threads.</span
-                        >
-                      </li>
-                      <li class="d-flex align-items-start gap-2">
-                        <i
-                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
-                        ></i>
-                        <span><strong>Rich Media:</strong> Support interactive
-                          buttons, catalogs & files.</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
                 <!-- 2. Broadcast -->
                 <div class="col-12 col-md-6">
                   <div
@@ -876,7 +409,9 @@
                     >
                       <i class="bi bi-megaphone-fill"></i>
                     </div>
-                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Broadcast</h3>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">
+                      Broadcast
+                    </h3>
                     <ul
                       class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
                     >
@@ -936,7 +471,9 @@
                     >
                       <i class="bi bi-robot"></i>
                     </div>
-                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Automation</h3>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">
+                      Automation
+                    </h3>
                     <ul
                       class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
                     >
@@ -991,7 +528,9 @@
                     >
                       <i class="bi bi-diagram-3-fill"></i>
                     </div>
-                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Integration</h3>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">
+                      Integration
+                    </h3>
                     <ul
                       class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
                     >
@@ -1090,7 +629,6 @@
           </div>
         </div>
 
-
         <script>
           (function () {
             var body = document.getElementById("zaChatBody");
@@ -1145,7 +683,9 @@
               },
             ];
 
-            var TYPING_MS = 500, GAP_MS = 600, RESTART_MS = 2500;
+            var TYPING_MS = 500,
+              GAP_MS = 600,
+              RESTART_MS = 2500;
             var run = 0,
               timers = [];
             function later(fn, ms) {
@@ -1262,377 +802,21 @@
         </script>
       </section>
 
-      <!-- Core Capabilities Section with Book Demo CTA (No Form) -->
-      <!-- <section class="py-5 bg-light" id="capabilities">
-  <div class="container py-4">
     
-   
-    <div class="row justify-content-center text-center mb-5">
-      <div class="col-lg-8">
-        <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-3">Platform Features</span>
-        <h2 class="font-heading fw-bold display-6 text-dark mb-3">Core Capabilities of 11za</h2>
-        <p class="text-secondary lead fs-6">Empower your WhatsApp communication with powerful tools for customer chat, marketing broadcasts, intelligent automations, and enterprise integrations.</p>
-      </div>
-    </div>
-
-       <div class="row g-4 align-items-stretch">
-      
-      
-      <div class="col-12 col-xl-8">
-        <div class="row g-4">
-          
-       
-          <div class="col-12 col-md-6">
-            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden capability-card">
-              <img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Customer Support Chat Team" style="height: 180px;">
-              <div class="card-body p-4">
-                <div class="rounded-3 d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success fs-3 p-3 mb-3" style="width: 50px; height: 50px;">
-                  <i class="bi bi-chat-dots-fill"></i>
-                </div>
-                <h3 class="font-heading h5 fw-bold text-dark mb-3">Chat</h3>
-                <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2">
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Shared Team Inbox:</strong> Single central WhatsApp API number.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Auto-Assignment:</strong> Route chats based on agent load.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Internal Notes:</strong> Tag teammates inside conversation threads.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Rich Media:</strong> Support interactive buttons, catalogs & files.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        
-          <div class="col-12 col-md-6">
-            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden capability-card">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Marketing Broadcast Analytics" style="height: 180px;">
-              <div class="card-body p-4">
-                <div class="rounded-3 d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary fs-3 p-3 mb-3" style="width: 50px; height: 50px;">
-                  <i class="bi bi-megaphone-fill"></i>
-                </div>
-                <h3 class="font-heading h5 fw-bold text-dark mb-3">Broadcast</h3>
-                <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2">
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Bulk Messaging:</strong> Reach thousands with targeted campaigns.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Campaign Scheduler:</strong> Time broadcasts for peak response hours.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Dynamic Variables:</strong> Personalize messages per user data.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Real-time Analytics:</strong> Track open rates, delivery & failures.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-         
-          <div class="col-12 col-md-6">
-            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden capability-card">
-              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="AI Automation & Chatbots" style="height: 180px;">
-              <div class="card-body p-4">
-                <div class="rounded-3 d-inline-flex align-items-center justify-content-center fs-3 p-3 mb-3" style="width: 50px; height: 50px; background-color: rgba(147, 51, 234, 0.1); color: #9333ea;">
-                  <i class="bi bi-robot"></i>
-                </div>
-                <h3 class="font-heading h5 fw-bold text-dark mb-3">Automation</h3>
-                <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2">
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>No-Code Bot Builder:</strong> Deploy 24/7 interactive chatbots.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Order Updates:</strong> Automatic receipts & shipping alerts.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Abandoned Cart:</strong> Automated recovery reminders.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Auto-Replies:</strong> Out-of-office & greeting triggers.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="col-12 col-md-6">
-            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden capability-card">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Software Integration Hub" style="height: 180px;">
-              <div class="card-body p-4">
-                <div class="rounded-3 d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning fs-3 p-3 mb-3" style="width: 50px; height: 50px;">
-                  <i class="bi bi-diagram-3-fill"></i>
-                </div>
-                <h3 class="font-heading h5 fw-bold text-dark mb-3">Integration</h3>
-                <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2">
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>E-Commerce:</strong> Direct Shopify & WooCommerce sync.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>CRM Connections:</strong> HubSpot, Zoho & Meta Lead Ads.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Payment Gateways:</strong> Razorpay & Pabbly workflows.</span>
-                  </li>
-                  <li class="d-flex align-items-start gap-2">
-                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
-                    <span><strong>Custom APIs:</strong> Webhooks for ERPs & external platforms.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-     
-      <div class="col-12 col-xl-4">
-        <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-dark text-white h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
-             
-          <div class="position-relative z-1 my-auto">
-           
-            <h3 class="font-heading fw-bold display-6 text-white mb-3">Ready to transform your customer support & sales?</h3>
-            <p class="text-light opacity-75 fs-6 mb-4">Book a 1-on-1 walk-through with our WhatsApp API specialists. We'll show you how to automate workflows, set up chatbots, and run successful campaign broadcasts.</p>
-
-            <ul class="list-unstyled d-flex flex-column gap-2 mb-4 text-light opacity-90 small">
-              <li class="d-flex align-items-center gap-2">
-                <i class="bi bi-check2 text-success fw-bold fs-5"></i>
-                <span>30-minute interactive live walkthrough</span>
-              </li>
-              <li class="d-flex align-items-center gap-2">
-                <i class="bi bi-check2 text-success fw-bold fs-5"></i>
-                <span>Custom pricing & integration strategy</span>
-              </li>
-              <li class="d-flex align-items-center gap-2">
-                <i class="bi bi-check2 text-success fw-bold fs-5"></i>
-                <span>WhatsApp Business API verification guide</span>
-              </li>
-            </ul>
-
-            <div class="d-grid gap-3">
-              <a href="#book-demo" class="btn btn-success btn-lg fw-bold py-3 shadow-sm d-flex align-items-center justify-content-center gap-2">
-                <span>Book a Live Demo</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-              <a href="#contact-sales" class="btn btn-outline-light btn-lg fw-semibold py-2 fs-6">
-                Talk to Sales
-              </a>
-            </div>
-          </div>
-          <div class="mt-4 pt-3 border-top border-secondary border-opacity-50 position-relative z-1 text-center">
-            <span class="text-light opacity-75 small">⚡ Quick setup • Free consultation</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-      <!-- ==================== FEATURES ==================== -->
-      <!-- <section id="features" class="section section-alt">
-        <div class="container">
-          <div class="sec-head text-center mx-auto">
-            <p class="chapter-label justify-content-center reveal">Core Capabilities</p>
-            <h2 class="font-heading reveal" data-delay="0.08">
-              Everything WhatsApp can do for business.<span style="color: #09AF72 ;">In one platform.</span>
-            </h2>
-            <p class="sub reveal" data-delay="0.16">
-              From the first hello to the closed deal — acquire, engage,
-              automate, support and convert without leaving 11za.
-            </p>
-          </div>
-          <div class="f-grid" data-testid="core-features-grid">
-            <div class="reveal f-span2">
-              <article
-                class="f-card"
-                data-testid="feature-card-whatsapp-business-api"
-              >
-                <div class="halo" aria-hidden="true"></div>
-                <div class="inner">
-                  <div class="top">
-                    <span class="f-ic"
-                      ><svg class="ic ic-20t">
-                        <use href="#i-message-square" /></svg></span
-                    ><span class="f-tag">Official API</span>
-                  </div>
-                  <h3 class="font-heading">WhatsApp Business API</h3>
-                  <p>
-                    Connect your number to the official WhatsApp Business
-                    Platform — verified, reliable and built to scale.
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="reveal f-span2" data-delay="0.07">
-              <article class="f-card" data-testid="feature-card-team-inbox">
-                <div class="halo" aria-hidden="true"></div>
-                <div class="inner">
-                  <div class="top">
-                    <span class="f-ic"
-                      ><svg class="ic ic-20t">
-                        <use href="#i-users" /></svg></span
-                    ><span class="f-tag">Multi-agent</span>
-                  </div>
-                  <h3 class="font-heading">Team Inbox</h3>
-                  <p>
-                    Multiple agents on one number. Assign chats, add private
-                    notes, and monitor every customer interaction.
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="reveal" data-delay="0.14">
-              <article
-                class="f-card"
-                data-testid="feature-card-whatsapp-automation"
-              >
-                <div class="halo" aria-hidden="true"></div>
-                <div class="inner">
-                  <div class="top">
-                    <span class="f-ic"
-                      ><svg class="ic ic-20t">
-                        <use href="#i-workflow" /></svg></span
-                    ><span class="f-tag">No-code</span>
-                  </div>
-                  <h3 class="font-heading">WhatsApp Automation</h3>
-                  <p>
-                    Automate repetitive conversations and journeys — from
-                    welcome flows to abandoned-cart recovery.
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="reveal" data-delay="0.21">
-              <article class="f-card" data-testid="feature-card-chatbots">
-                <div class="halo" aria-hidden="true"></div>
-                <div class="inner">
-                  <div class="top">
-                    <span class="f-ic"
-                      ><svg class="ic ic-20t"><use href="#i-bot" /></svg></span
-                    ><span class="f-tag">24/7</span>
-                  </div>
-                  <h3 class="font-heading">Chatbots</h3>
-                  <p>
-                    Build personalised WhatsApp chatbots that answer, qualify
-                    and route customers around the clock.
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="reveal">
-              <article
-                class="f-card"
-                data-testid="feature-card-broadcast-campaigns"
-              >
-                <div class="halo" aria-hidden="true"></div>
-                <div class="inner">
-                  <div class="top">
-                    <span class="f-ic"
-                      ><svg class="ic ic-20t">
-                        <use href="#i-megaphone" /></svg></span
-                    ><span class="f-tag">Targeted</span>
-                  </div>
-                  <h3 class="font-heading">Broadcast &amp; Campaigns</h3>
-                  <p>
-                    Send targeted template campaigns to segmented audiences —
-                    with delivery, read and reply tracking.
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="reveal" data-delay="0.07">
-              <article
-                class="f-card"
-                data-testid="feature-card-lead-management"
-              >
-                <div class="halo" aria-hidden="true"></div>
-                <div class="inner">
-                  <div class="top">
-                    <span class="f-ic"
-                      ><svg class="ic ic-20t">
-                        <use href="#i-target" /></svg></span
-                    ><span class="f-tag">CRM-ready</span>
-                  </div>
-                  <h3 class="font-heading">Lead Management</h3>
-                  <p>
-                    Capture leads from IndiaMART, Facebook and your store. Tag,
-                    qualify and follow up before they go cold.
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="reveal f-span2" data-delay="0.14">
-              <article class="f-card" data-testid="feature-card-analytics">
-                <div class="halo" aria-hidden="true"></div>
-                <div class="inner">
-                  <div class="top">
-                    <span class="f-ic"
-                      ><svg class="ic ic-20t">
-                        <use href="#i-bar-chart" /></svg></span
-                    ><span class="f-tag">Insight</span>
-                  </div>
-                  <h3 class="font-heading">Analytics</h3>
-                  <p>
-                    Track conversations, campaigns, agent performance and even
-                    Shopify &amp; WooCommerce order analytics.
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="reveal f-span2" data-delay="0.21">
-              <article class="f-card" data-testid="feature-card-integrations">
-                <div class="halo" aria-hidden="true"></div>
-                <div class="inner">
-                  <div class="top">
-                    <span class="f-ic"
-                      ><svg class="ic ic-20t"><use href="#i-plug" /></svg></span
-                    ><span class="f-tag">50+ tools</span>
-                  </div>
-                  <h3 class="font-heading">Integrations</h3>
-                  <p>
-                    Connect Shopify, WooCommerce, TallyPrime, Shiprocket,
-                    Pabbly, Calendly and the rest of your stack.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <!-- ==================== PRODUCT SHOWCASE ==================== -->
       <section
         id="showcase"
-        class="section py-5 position-relative overflow-hidden bg-light"
+        class="section py-5 position-relative overflow-hidden"
         data-aos="fade-up"
       >
         <div class="container py-4">
           <!-- Section Header -->
           <div class="row justify-content-center text-center mb-4">
             <div class="sec-head col-lg-8">
-              <p class="chapter-label justify-content-center reveal">Product Tour</p>
+              <p class="chapter-label justify-content-center reveal">
+                Product Tour
+              </p>
               <h2 class="font-heading reveal" data-delay="0.08">
                 A workspace your whole team will love
               </h2>
@@ -1704,36 +888,23 @@
             <div class="col-12 col-lg-12">
               <div class="show-stage position-relative">
                 <div
-                  class="show-frame position-relative z-1 rounded-4 overflow-hidden border shadow-lg bg-white p-3 p-md-4"
+                  class="show-frame position-relative z-1 rounded-4 overflow-hidden border shadow-lg bg-white"
                   data-testid="product-showcase-view-container"
                 >
-                  <!-- PANEL: INBOX (2 IMAGES) -->
+                  <!-- PANEL: INBOX (VIDEO) -->
                   <div class="show-panel active h-100" data-panel="inbox">
-                    <div class="row g-3">
-                      <div class="col-12 col-md-8">
-                        <div
-                          class="card border-0 shadow-sm rounded-3 overflow-hidden"
-                        >
-                          <img
-                            src="assets/images/inbox-desktop.png"
-                            alt="Shared Team Inbox Desktop View"
-                            class="img-fluid w-100 h-100 object-fit-cover"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-4">
-                        <div
-                          class="card border-0 shadow-sm rounded-3 overflow-hidden"
-                        >
-                          <img
-                            src="assets/images/inbox-mobile.png"
-                            alt="Mobile Chat App View"
-                            class="img-fluid w-100 h-100 object-fit-cover"
-                          />
-                        </div>
-                      </div>
+                    <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+                      <video
+                        class="w-100 d-block"
+                        src="assets/video/inbox.mp4"
+                        autoplay muted loop playsinline preload="metadata"
+                        aria-label="Shared Team Inbox demo"
+                      ></video>
                     </div>
                   </div>
+
+
+
 
                   <!-- PANEL: AUTOMATION (2 IMAGES) -->
                   <div class="show-panel h-100" data-panel="automation">
@@ -1861,6 +1032,14 @@
                 targetPanel.classList.add("active");
               }
 
+              // Play the inbox video only while its panel is visible
+              document.querySelectorAll(".show-panel video").forEach(function (v) {
+                if (v.closest(".show-panel").classList.contains("active")) {
+                  v.play().catch(function () {});
+                } else {
+                  v.pause();
+                }
+              });
               // Update description blurb
               if (blurb && description) {
                 blurb.textContent = description;
@@ -1919,7 +1098,6 @@
               </ul>
 
               <div class="vz-cta d-flex flex-wrap gap-3">
-               
                 <a
                   href="https://calendly.com/engees/schedule-a-demo"
                   class="btn vz-btn vz-btn-ghost"
@@ -2151,72 +1329,84 @@
         })();
       </script>
       <!-- ==================== INTEGRATIONS ==================== -->
-      <section id="integrations" class="section section-alt" data-aos="fade-up">
+      <section id="integrations" class="section section-alt integrations" data-aos="fade-up">
         <div class="container">
-          <div class="sec-head text-center mx-auto">
-            <p class="chapter-label justify-content-center reveal">Integrations</p>
-            <h2 class="font-heading reveal" data-delay="0.08">
-              Connect 11za With the Tools You Already Use
-            </h2>
-            <p class="sub reveal" data-delay="0.16">
-              Bring WhatsApp communication into your existing business workflow.
-              Connect 11za with platforms such as:
-            </p>
-          </div>
-          <div class="int-grid" data-testid="integrations-category-grid">
-            <div class="reveal">
-              <article class="int-card">
-                <div class="int-logo">
-                  <img src="assets/images/pabbly.png" alt="Pabbly" />
-                </div>
-                <h3 class="font-heading">Pabbly</h3>
-              </article>
+          <div class="row align-items-center g-5">
+            <div class="col-lg-5">
+              <p class="chapter-label reveal">Integrations</p>
+              <h2 class="font-heading reveal" data-delay="0.08">
+                Connect 11za With the Tools You Already Use
+              </h2>
+              <p class="int-lead reveal" data-delay="0.16">
+                Bring WhatsApp communication into your existing business
+                workflow, with no switching between tools.
+              </p>
+              <ul class="int-points reveal" data-delay="0.24">
+                <li><i class="bi bi-check-circle-fill"></i> Sync orders from Shopify &amp; WooCommerce</li>
+                <li><i class="bi bi-check-circle-fill"></i> Send shipping updates with Shiprocket</li>
+                <li><i class="bi bi-check-circle-fill"></i> Automate workflows with Pabbly</li>
+                <li><i class="bi bi-check-circle-fill"></i> Book meetings and sync accounts in TallyPrime</li>
+              </ul>
+              <a href="https://calendly.com/engees/schedule-a-demo" class="btn btn-lite int-cta reveal" data-delay="0.32">
+                Book a Demo <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
-
-            <div class="reveal" data-delay="0.08">
-              <article class="int-card">
-                <div class="int-logo">
-                  <img src="assets/images/shiprocket.png" alt="Shiprocket" />
-                </div>
-                <h3 class="font-heading">Shiprocket</h3>
-              </article>
+            <div class="col-lg-7">
+              <div class="int-board" data-testid="integrations-category-grid">
+            <div class="int-tile reveal" data-delay="0">
+              <img src="assets/images/shopify.png" alt="Shopify" loading="lazy" />
+              <strong>Shopify</strong>
+              <span>Ecommerce</span>
             </div>
-
-            <div class="reveal" data-delay="0.16">
-              <article class="int-card">
-                <div class="int-logo">
-                  <img src="assets/images/calendly.png" alt="Calendly" />
-                </div>
-                <h3 class="font-heading">Calendly</h3>
-              </article>
+            <div class="int-tile reveal" data-delay="0.06">
+              <img src="assets/images/ic_woocommerc.png" alt="WooCommerce" loading="lazy" />
+              <strong>WooCommerce</strong>
+              <span>Ecommerce</span>
             </div>
-
-            <div class="reveal">
-              <article class="int-card">
-                <div class="int-logo">
-                  <img src="assets/images/ic_tallyprime.png" alt="TallyPrime" />
-                </div>
-                <h3 class="font-heading">TallyPrime</h3>
-              </article>
+            <div class="int-tile reveal" data-delay="0.12">
+              <img src="assets/images/shiprocket.png" alt="Shiprocket" loading="lazy" />
+              <strong>Shiprocket</strong>
+              <span>Shipping</span>
             </div>
-
-            <div class="reveal" data-delay="0.08">
-              <article class="int-card">
-                <div class="int-logo">
-                  <img
-                    src="assets/images/ic_woocommerc.png"
-                    alt="WooCommerce"
-                  />
-                </div>
-                <h3 class="font-heading">WooCommerce</h3>
-              </article>
+            <div class="int-tile reveal" data-delay="0.18">
+              <img src="assets/images/pabbly.png" alt="Pabbly" loading="lazy" />
+              <strong>Pabbly</strong>
+              <span>Automation</span>
+            </div>
+            <div class="int-hub reveal" data-delay="0.1">
+              <img src="assets/images/11ZA_logo_green.svg" alt="11za" />
+            </div>
+            <div class="int-tile reveal" data-delay="0.24">
+              <img src="assets/images/calendly.png" alt="Calendly" loading="lazy" />
+              <strong>Calendly</strong>
+              <span>Scheduling</span>
+            </div>
+            <div class="int-tile reveal" data-delay="0.3">
+              <img src="assets/images/ic_tallyprime.png" alt="TallyPrime" loading="lazy" />
+              <strong>TallyPrime</strong>
+              <span>Accounting</span>
+            </div>
+            <div class="int-tile reveal" data-delay="0.36">
+              <img src="assets/images/meta-logo.png" alt="Meta" loading="lazy" />
+              <strong>Meta</strong>
+              <span>WhatsApp API</span>
+            </div>
+            <div class="int-tile int-more reveal" data-delay="0.42">
+              <i class="bi bi-plus-lg"></i>
+              <strong>And more</strong>
+              <span>via API &amp; webhooks</span>
+            </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="video-section position-relative">
         <div class="container">
-          <div class="hero-mock-wrap col-lg-9 mx-auto text-center" data-testid="hero-dashboard-preview">
+          <div
+            class="hero-mock-wrap col-lg-9 mx-auto text-center"
+            data-testid="hero-dashboard-preview"
+          >
             <div
               style="
                 position: relative;
@@ -2252,274 +1442,8 @@
           </div>
         </div>
       </section>
-      <!-- ==================== AUTOMATION WORKFLOW ==================== -->
-      <!-- <section
-        id="automation"
-        class="section section-alt"
-        style="overflow: hidden"
-      >
-        <div class="container">
-          <div class="sec-head text-center mx-auto">
-            <p class="chapter-label justify-content-center reveal">Automation</p>
-            <h2 class="font-heading reveal" data-delay="0.08">
-              From first message to closed deal — on autopilot
-            </h2>
-            <p class="sub reveal" data-delay="0.16">
-              Watch a conversation travel through 11za. Every step automatic,
-              every handoff instant.
-            </p>
-          </div>
-          <div
-            class="wf-wrap"
-            data-testid="automation-workflow-diagram"
-            data-wf
-          >
-            <div class="wf-line" aria-hidden="true">
-              <div class="wf-progress" data-wf-progress></div>
-            </div>
-            <div class="wf-steps">
-              <div class="reveal">
-                <div class="wf-step">
-                  <span class="wf-dot" aria-hidden="true"></span>
-                  <div class="wf-half">
-                    <div class="wf-card">
-                      <div class="meta">
-                        <span class="num">01</span><span class="rule"></span>
-                      </div>
-                      <h3 class="font-heading">Customer messages you</h3>
-                      <p>A query lands on your business WhatsApp number.</p>
-                    </div>
-                  </div>
-                  <div class="wf-half" aria-hidden="true"></div>
-                </div>
-              </div>
-              <div class="reveal" data-delay="0.05">
-                <div class="wf-step dir-r">
-                  <span class="wf-dot" aria-hidden="true"></span>
-                  <div class="wf-half">
-                    <div class="wf-card">
-                      <div class="meta">
-                        <span class="num">02</span><span class="rule"></span>
-                      </div>
-                      <h3 class="font-heading">WhatsApp Platform</h3>
-                      <p>
-                        Delivered securely over the official WhatsApp Business
-                        API.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="wf-half" aria-hidden="true"></div>
-                </div>
-              </div>
-              <div class="reveal" data-delay="0.1">
-                <div class="wf-step">
-                  <span class="wf-dot accent" aria-hidden="true"><i></i></span>
-                  <div class="wf-half">
-                    <div class="wf-card accent">
-                      <div class="meta">
-                        <span class="num">03</span><span class="rule"></span>
-                      </div>
-                      <h3 class="font-heading">11za Automation</h3>
-                      <p>
-                        Your workflow triggers instantly — no agent required.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="wf-half" aria-hidden="true"></div>
-                </div>
-              </div>
-              <div class="reveal" data-delay="0.15">
-                <div class="wf-step dir-r">
-                  <span class="wf-dot accent" aria-hidden="true"><i></i></span>
-                  <div class="wf-half">
-                    <div class="wf-card accent">
-                      <div class="meta">
-                        <span class="num">04</span><span class="rule"></span>
-                      </div>
-                      <h3 class="font-heading">AI / Chatbot</h3>
-                      <p>
-                        FAQs answered, intent understood, details collected.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="wf-half" aria-hidden="true"></div>
-                </div>
-              </div>
-              <div class="reveal" data-delay="0.2">
-                <div class="wf-step">
-                  <span class="wf-dot" aria-hidden="true"></span>
-                  <div class="wf-half">
-                    <div class="wf-card">
-                      <div class="meta">
-                        <span class="num">05</span><span class="rule"></span>
-                      </div>
-                      <h3 class="font-heading">Lead qualified</h3>
-                      <p>
-                        The contact is scored, tagged and synced to your CRM.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="wf-half" aria-hidden="true"></div>
-                </div>
-              </div>
-              <div class="reveal" data-delay="0.25">
-                <div class="wf-step dir-r">
-                  <span class="wf-dot" aria-hidden="true"></span>
-                  <div class="wf-half">
-                    <div class="wf-card">
-                      <div class="meta">
-                        <span class="num">06</span><span class="rule"></span>
-                      </div>
-                      <h3 class="font-heading">Sales team alerted</h3>
-                      <p>
-                        The right agent gets the chat with full context
-                        attached.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="wf-half" aria-hidden="true"></div>
-                </div>
-              </div>
-              <div class="reveal" data-delay="0.3">
-                <div class="wf-step">
-                  <span class="wf-dot accent" aria-hidden="true"><i></i></span>
-                  <div class="wf-half">
-                    <div class="wf-card accent">
-                      <div class="meta">
-                        <span class="num">07</span><span class="rule"></span>
-                      </div>
-                      <h3 class="font-heading">Conversion</h3>
-                      <p>
-                        Faster replies, warmer follow-ups, more closed deals.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="wf-half" aria-hidden="true"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- ==================== USE CASES ==================== -->
-      <!-- <section id="usecases" class="section">
-        <div class="container">
-          <div class="sec-head text-center mx-auto">
-            <p class="chapter-label justify-content-center reveal">Solutions</p>
-            <h2 class="font-heading reveal" data-delay="0.08">
-              WhatsApp for Every Stage<span style="color: #09AF72;"> of Your Customer Journey</h2></span>
-            </h2>
-            <p class="sub reveal" data-delay="0.16">
-              Whether you're acquiring leads, closing sales or supporting existing customers, 11za helps you communicate through the channel your customers already use.
-            </p>
-          </div>
-          <div class="uc-grid" data-testid="usecases-industry-grid">
-            <div class="reveal">
-              <article class="uc-card" data-testid="usecase-card-e-commerce">
-                <div class="top">
-                  <span class="uc-ic"
-                    ><svg class="ic ic-19t">
-                      <use href="#i-shopping-cart" /></svg></span
-                  ><svg class="ic uc-arrow">
-                    <use href="#i-arrow-up-right" />
-                  </svg>
-                </div>
-                <h3 class="font-heading">E-commerce</h3>
-                <p>
-                 Send order updates, product information, delivery notifications and abandoned-cart messages.
-                </p>
-                <span class="uc-pill">Turn conversations into conversions.</span>
-              </article>
-            </div>
-            <div class="reveal" data-delay="0.07">
-              <article class="uc-card" data-testid="usecase-card-education">
-                <div class="top">
-                  <span class="uc-ic"
-                    ><svg class="ic ic-19t">
-                      <use href="#i-graduation-cap" /></svg></span
-                  ><svg class="ic uc-arrow">
-                    <use href="#i-arrow-up-right" />
-                  </svg>
-                </div>
-                <h3 class="font-heading">Education</h3>
-                <p>
-                  Capture enquiries, answer questions and follow up with prospective students.
-                </p>
-                <span class="uc-pill">Turn enquiries into admissions.</span>
-              </article>
-            </div>
-            <div class="reveal" data-delay="0.14">
-              <article class="uc-card" data-testid="usecase-card-healthcare">
-                <div class="top">
-                  <span class="uc-ic"
-                    ><svg class="ic ic-19t">
-                      <use href="#i-heart-pulse" /></svg></span
-                  ><svg class="ic uc-arrow">
-                    <use href="#i-arrow-up-right" />
-                  </svg>
-                </div>
-                <h3 class="font-heading">Healthcare</h3>
-                <p>
-                  Manage appointment reminders, notifications and customer support.
-                </p>
-                <span class="uc-pill">Keep customers informed and connected.</span>
-              </article>
-            </div>
-            <div class="reveal" data-delay="0.21">
-              <article class="uc-card" data-testid="usecase-card-real-estate">
-                <div class="top">
-                  <span class="uc-ic"
-                    ><svg class="ic ic-19t">
-                      <use href="#i-building" /></svg></span
-                  ><svg class="ic uc-arrow">
-                    <use href="#i-arrow-up-right" />
-                  </svg>
-                </div>
-                <h3 class="font-heading">Real Estate</h3>
-                <p>
-                  Capture property enquiries, qualify leads and coordinate follow-ups.
-                </p>
-                <span class="uc-pill">Turn enquiries into site visits.</span>
-              </article>
-            </div>
-            <div class="reveal" data-delay="0.07">
-              <article class="uc-card" data-testid="usecase-card-travel">
-                <div class="top">
-                  <span class="uc-ic"
-                    ><svg class="ic ic-19t"><use href="#i-plane" /></svg></span
-                  ><svg class="ic uc-arrow">
-                    <use href="#i-arrow-up-right" />
-                  </svg>
-                </div>
-                <h3 class="font-heading">Travel</h3>
-                <p>
-                  Share booking confirmations, travel updates and customer assistance through WhatsApp.
-                </p>
-                <span class="uc-pill">Keep travellers connected at every step.</span>
-              </article>
-            </div>
-            <div class="reveal" data-delay="0.14">
-              <article class="uc-card" data-testid="usecase-card-retail">
-                <div class="top">
-                  <span class="uc-ic"
-                    ><svg class="ic ic-19t"><use href="#i-store" /></svg></span
-                  ><svg class="ic uc-arrow">
-                    <use href="#i-arrow-up-right" />
-                  </svg>
-                </div>
-                <h3 class="font-heading">Retail</h3>
-                <p>
-                  Share catalogues, promotions, product updates and customer communications.
-                </p>
-                <span class="uc-pill">Bring your store closer to your customers.</span>
-              </article>
-            </div>
-            
-          </div>
-        </div>
-      </section> -->
-<!-- ==================== PRICING ==================== -->
+   
+      <!-- ==================== PRICING ==================== -->
       <section id="pricing" class="section section-alt" data-aos="fade-up">
         <div class="container">
           <div class="sec-head text-center mx-auto">
@@ -2532,77 +1456,82 @@
               and requirements, so you only pay for what you need.
             </p>
           </div>
-          <div class="pr-grid" data-testid="pricing-plans-container">
-            <div class="reveal">
-              <div class="pr-dark">
-                <div class="dots dot-grid-dark" aria-hidden="true"></div>
-                <div class="blob" aria-hidden="true"></div>
-                <span class="chip-dark">11za Platform</span>
+
+          <div class="row g-4 align-items-stretch mt-3" data-testid="pricing-plans-container">
+            <!-- 11za platform: featured -->
+            <div class="col-lg-6 reveal">
+              <div class="pl-featured">
+                <span class="pl-ribbon">Custom plan</span>
+                <span class="pl-chip"><i class="bi bi-lightning-charge-fill"></i> 11za Platform</span>
                 <h3 class="font-heading">Talk to Sales</h3>
-                <p class="sub">
+                <p class="pl-price">Tailored to your team</p>
+                <p class="pl-desc">
                   Get a plan tailored to your team — inbox agents, automation,
                   campaigns, chatbots, integrations and onboarding support
                   included.
                 </p>
-                <ul class="pr-list ps-0">
-                  <li>
-                    <span class="ck"
-                      ><svg class="ic"><use href="#i-check" /></svg></span
-                    >Shared team inbox on one number
-                  </li>
-                  <li>
-                    <span class="ck"
-                      ><svg class="ic"><use href="#i-check" /></svg></span
-                    >Automation, chatbots &amp; campaigns
-                  </li>
-                  <li>
-                    <span class="ck"
-                      ><svg class="ic"><use href="#i-check" /></svg></span
-                    >Free onboarding &amp; team training
-                  </li>
-                  <li>
-                    <span class="ck"
-                      ><svg class="ic"><use href="#i-check" /></svg></span
-                    >Dedicated support group
-                  </li>
+
+                <ul class="pl-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Shared team inbox on one number</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Automation, chatbots &amp; campaigns</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Free onboarding &amp; team training</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Dedicated support group</li>
                 </ul>
+
                 <a
                   href="https://calendly.com/engees/schedule-a-demo"
                   target="_blank"
                   rel="noreferrer"
-                  class="btn btn-light"
+                  class="pl-btn"
                   data-testid="pricing-talk-to-sales-btn"
-                  >Talk to Sales
-                  </a>
+                  >Talk to Sales <i class="bi bi-arrow-right"></i></a
+                >
               </div>
             </div>
-            <div class="reveal" data-delay="0.12">
-              <div class="pr-light">
-                <span class="chip-light">Meta Messaging Charges</span>
+
+            <!-- Meta charges -->
+            <div class="col-lg-6 reveal" data-delay="0.12">
+              <div class="pl-meta">
+                <span class="pl-chip is-light"><i class="bi bi-meta"></i> Meta Messaging Charges</span>
                 <h3 class="font-heading">Transparent, pay-as-you-go</h3>
-                <p class="sub">
+                <p class="pl-desc">
                   Meta charges per 24-hour conversation, billed by category at
                   country-specific rates. These pass through to Meta — 11za
                   doesn't mark them up.
                 </p>
-                <div class="meta-cats">
-                  <div>
-                    <p class="c1">Marketing</p>
-                    <p class="c2">per-conversation</p>
+
+                <div class="row g-3 mt-1">
+                  <div class="col-6">
+                    <div class="pl-cat">
+                      <span class="pl-cat-icon"><i class="bi bi-megaphone"></i></span>
+                      <strong>Marketing</strong>
+                      <small>per-conversation</small>
+                    </div>
                   </div>
-                  <div>
-                    <p class="c1">Utility</p>
-                    <p class="c2">per-conversation</p>
+                  <div class="col-6">
+                    <div class="pl-cat">
+                      <span class="pl-cat-icon"><i class="bi bi-receipt"></i></span>
+                      <strong>Utility</strong>
+                      <small>per-conversation</small>
+                    </div>
                   </div>
-                  <div>
-                    <p class="c1">Authentication</p>
-                    <p class="c2">per-conversation</p>
+                  <div class="col-6">
+                    <div class="pl-cat">
+                      <span class="pl-cat-icon"><i class="bi bi-shield-lock"></i></span>
+                      <strong>Authentication</strong>
+                      <small>per-conversation</small>
+                    </div>
                   </div>
-                  <div>
-                    <p class="c1">Service</p>
-                    <p class="c2">per-conversation</p>
+                  <div class="col-6">
+                    <div class="pl-cat">
+                      <span class="pl-cat-icon"><i class="bi bi-headset"></i></span>
+                      <strong>Service</strong>
+                      <small>per-conversation</small>
+                    </div>
                   </div>
                 </div>
+
+                <p class="pl-note"><i class="bi bi-patch-check-fill"></i> No markup from 11za on Meta's charges</p>
               </div>
             </div>
           </div>
@@ -2640,7 +1569,8 @@
             <div class="col-lg-4 col-md-6">
               <article class="cs-card">
                 <a
-                  href="https://youtu.be/rAi-WeN00Cc" target="_blank"
+                  href="https://youtu.be/rAi-WeN00Cc"
+                  target="_blank"
                   class="cs-image-link"
                 >
                   <img
@@ -2648,58 +1578,49 @@
                     alt=""
                     class="w-100 h-100"
                   />
-                
 
-                <div class="cs-card-body">
-                  <h3 class="font-heading cs-card-title">
-                    Customised Checkout Flow for ScrapBazar.in
-                  </h3>
-                </div>
+                  <div class="cs-card-body">
+                    <h3 class="font-heading cs-card-title">
+                      Customised Checkout Flow for ScrapBazar.in
+                    </h3>
+                  </div>
                 </a>
               </article>
             </div>
 
             <div class="col-lg-4 col-md-6">
               <article class="cs-card">
-                <a
-                  href="https://youtu.be/fRsfMtJKa3Q"
-                  class="cs-image-link"
-                >
+                <a href="https://youtu.be/fRsfMtJKa3Q" class="cs-image-link">
                   <img
                     src="assets/images/case-study-solar.png"
                     alt=""
                     class="w-100 h-100"
                   />
-               
 
-                <div class="cs-card-body">
-                  <h3 class="font-heading cs-card-title">
-                    Connect with your Indiamart Leads directly on WhatsApp
-                  </h3>
-                </div>
-                 </a>
+                  <div class="cs-card-body">
+                    <h3 class="font-heading cs-card-title">
+                      Connect with your Indiamart Leads directly on WhatsApp
+                    </h3>
+                  </div>
+                </a>
               </article>
             </div>
 
             <div class="col-lg-4 col-md-6">
               <article class="cs-card">
-                <a
-                  href="https://youtu.be/ag4DiJn6atE"
-                  class="cs-image-link"
-                >
+                <a href="https://youtu.be/ag4DiJn6atE" class="cs-image-link">
                   <img
                     src="assets/images/case-study-facebook.png"
                     alt=""
                     class="w-100 h-100"
                   />
-               
 
-                <div class="cs-card-body">
-                  <h3 class="font-heading cs-card-title">
-                    Get your Facebook Leads directly to WhatsApp
-                  </h3>
-                </div>
-                 </a>
+                  <div class="cs-card-body">
+                    <h3 class="font-heading cs-card-title">
+                      Get your Facebook Leads directly to WhatsApp
+                    </h3>
+                  </div>
+                </a>
               </article>
             </div>
           </div>
@@ -2708,15 +1629,15 @@
         </div>
       </section>
 
-      
-
       <!-- =========================================================
      CTA
 ========================================================= -->
       <section class="cta-section" data-aos="fade-up">
         <div class="container">
           <div class="cta-box">
-            <h2 class="font-heading">Ready to simplify WhatsApp communication?</h2>
+            <h2 class="font-heading">
+              Ready to simplify WhatsApp communication?
+            </h2>
             <p>
               Bring your customer conversations, team and automation together in
               one platform.<br />
@@ -2739,23 +1660,32 @@
       </section>
       <section class="api-partner-section overflow-hidden">
         <div class="row">
-
-          <div class="col-lg-6 api-partner ap-1 d-flex align-items-center justify-content-center gap-2" >
-             <div>
-                <img src="assets/images/meta-logo.png" alt="" style="height: 30px;">
-              </div>
+          <div
+            class="col-lg-6 api-partner ap-1 d-flex align-items-center justify-content-center gap-2"
+          >
             <div>
-              Meta Tech Partner
+              <img
+                src="assets/images/meta-logo.png"
+                alt=""
+                style="height: 30px"
+              />
             </div>
+            <div>Meta Tech Partner</div>
           </div>
           <div class="col-lg-6 api-partner ap-2 px-4 px-sm-0">
-            <div class="d-flex gap-2 align-items-center justify-content-center" data-aos="zoom-in"> 
-
+            <div
+              class="d-flex gap-2 align-items-center justify-content-center"
+              data-aos="zoom-in"
+            >
               <div>
                 <!-- <img src="assets/images/whatsapp-black.svg" alt="" style="height: 30px;"> -->
-                <img src="assets/images/whatsapp-white.svg" alt="" style="height: 30px;">
+                <img
+                  src="assets/images/whatsapp-white.svg"
+                  alt=""
+                  style="height: 30px"
+                />
               </div>
-              <div class="" >
+              <div class="">
                 Powered by Official <strong>WhatsApp Business API</strong>
               </div>
             </div>
@@ -2835,7 +1765,7 @@
                 <img
                   src="assets/images/googleplay.png"
                   alt="Download on App Store"
-                 class=""
+                  class=""
                 />
               </a>
             </div>
@@ -2848,7 +1778,7 @@
                 <img
                   src="assets/images/appstore.png"
                   alt="Get it on Google Play"
-                 class=""
+                  class=""
                 />
               </a>
             </div>
@@ -2861,7 +1791,7 @@
                 <img
                   src="assets/images/woo.png"
                   alt="Download on App Store"
-                 class=""
+                  class=""
                 />
               </a>
             </div>
@@ -2874,7 +1804,7 @@
                 <img
                   src="assets/images/shopify.png"
                   alt="Get it on Google Play"
-                 class=""
+                  class=""
                 />
               </a>
             </div>

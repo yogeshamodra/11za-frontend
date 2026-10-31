@@ -1,0 +1,30 @@
+/* Section background rhythm: light sections alternate green / white.
+   Dark designed bands (video section, API partners, footer) are left as is. */
+:root {
+    --sec-green: #fafcfa;
+    --sec-white: #fff;
+}
+
+body {
+    background: var(--sec-white);
+}
+
+.trusted-logos,
+.vz-aivoice,
+.cta-section {
+    background: var(--sec-white);
+}
+
+#showcase,
+#integrations,
+.latest-case-studies {
+    background: var(--sec-green);
+}
+
+.vz-aivoice {
+    background: var(--sec-white);
+}
+
+#pricing {
+    background: var(--sec-white);
+}

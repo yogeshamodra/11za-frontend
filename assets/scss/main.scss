@@ -12,9 +12,7 @@
 @use "pages/home/problem-solution";
 @use "pages/home/features";
 @use "pages/home/showcase";
-@use "pages/home/workflow";
 @use "pages/home/ai";
-@use "pages/home/use-cases";
 @use "pages/home/integrations";
 @use "pages/home/pricing";
 @use "pages/home/cta";
@@ -23,10 +21,13 @@
 @use "pages/home/hero-letters";
 @use "pages/home/hero-banner";
 @use "pages/home/hero-banner-extras";
+@use "pages/home/trusted-logos";
 @use "pages/home/capability-card";
 @use "pages/home/features-extras";
-@use "pages/home/capability-card-use-cases";
 @use "pages/home/ai-voice";
 @use "pages/home/video-section";
 @use "pages/home/api-partner";
 @use "pages/home/startup-badges";
+@use "pages/home/case-studies";
+@use "pages/about/about";
+@use "base/section-backgrounds";
