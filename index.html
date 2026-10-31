@@ -1,0 +1,4159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>11za — WhatsApp Business API Platform for Customer Engagement</title>
+    <meta
+      name="description"
+      content="11za helps businesses turn WhatsApp into a growth engine — shared team inbox, WhatsApp automation, chatbots, broadcast campaigns, lead management and analytics."
+    />
+    <link rel="canonical" href="https://11za.com/" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body class="font-body">
+    <header
+      class="site-header bg-white"
+      data-nav
+      data-testid="nav-sticky-header"
+    >
+      <nav class="container nav-inner" aria-label="Main navigation">
+        <!-- LOGO -->
+        <a href="index.html" class="brand" data-testid="nav-logo-11za">
+          <!-- <img
+            src="assets/images/11za_logo.svg"
+            alt=""
+            class="logo-icon"
+            width="120"
+            height="40"
+          /> -->
+          
+          <img
+            src="assets/images/11ZA_new_logo.svg"
+            alt=""
+            class="logo-icon"
+            width="120"
+            height="40"
+          />
+        </a>
+
+        <!-- DESKTOP NAVIGATION -->
+        <ul class="nav-links mb-0 ps-0 list-unstyled">
+          <li>
+            <a href="index.html" data-testid="nav-link-home"> Home </a>
+          </li>
+
+          <li>
+            <a href="about.html" data-testid="nav-link-about"> About </a>
+          </li>
+
+          <li>
+            <a href="pricing.html" data-testid="nav-link-pricing"> Pricing </a>
+          </li>
+
+          <li>
+            <a href="ecommerce.html" data-testid="nav-link-integrations">
+              Ecommerce
+            </a>
+          </li>
+          <li>
+            <a href="integration.html" data-testid="nav-link-integrations">
+              Integrations
+            </a>
+          </li>
+
+          <li>
+            <a href="solutions.html" data-testid="nav-link-solutions">
+              Solutions
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" data-testid="nav-link-contact"> Contact </a>
+          </li>
+        </ul>
+
+        <!-- DESKTOP CTA -->
+        <div class="nav-ctas">
+          <a href="#cta" class="nav-login" data-testid="nav-login-btn">
+            Login
+          </a>
+
+          <a href="#cta" class="nav-start" data-testid="nav-get-started-btn">
+            Sign Up
+          </a>
+
+          <a
+            href="https://calendly.com/engees/schedule-a-demo"
+            target="_blank"
+            rel="noreferrer"
+            class="nav-demo"
+            data-testid="nav-book-demo-btn"
+          >
+            Book a Demo
+          </a>
+        </div>
+
+        <!-- MOBILE HAMBURGER -->
+        <button
+          class="nav-burger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileSidebar"
+          aria-controls="mobileSidebar"
+          aria-label="Toggle menu"
+          data-testid="nav-mobile-menu-btn"
+        >
+          <div class="open-menu">
+            <img src="assets/images/menu-icon.svg" alt="" height="27px" />
+          </div>
+          <div class="close-menu">
+            <img src="assets/images/close-icon.svg" alt="" height="27px" />
+          </div>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ============================================================
+     MOBILE SIDEBAR / OFFCANVAS
+============================================================ -->
+
+    <div
+      class="offcanvas offcanvas-end mobile-sidebar"
+      tabindex="-1"
+      id="mobileSidebar"
+      aria-labelledby="mobileSidebarLabel"
+      data-mobile-panel
+    >
+      <!-- SIDEBAR CONTENT -->
+      <div class="offcanvas-body">
+        <ul class="mobile-nav list-unstyled mb-0">
+          <li>
+            <a class="mlink" href="index.html" data-bs-dismiss="offcanvas">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a class="mlink" href="about.html" data-bs-dismiss="offcanvas">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a class="mlink" href="pricing.html" data-bs-dismiss="offcanvas">
+              Pricing
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="mlink"
+              href="integration.html"
+              data-bs-dismiss="offcanvas"
+            >
+              Integrations
+            </a>
+          </li>
+
+          <li>
+            <a class="mlink" href="solutions.html" data-bs-dismiss="offcanvas">
+              Solutions
+            </a>
+          </li>
+
+          <li>
+            <a class="mlink" href="contact.html" data-bs-dismiss="offcanvas">
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        <!-- MOBILE CTA -->
+        <div class="mctas">
+          <a href="#cta" class="m-start" data-bs-dismiss="offcanvas">
+            Sign Up
+          </a>
+
+          <a
+            href="https://calendly.com/engees/schedule-a-demo"
+            target="_blank"
+            rel="noreferrer"
+            class="m-demo"
+          >
+            Book a Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <style>
+        /* ===== Hero 2 ===== */
+        .hero2 {
+          position: relative;
+          overflow: hidden;
+          color: #fff;
+          padding-top: 200px;
+          /* padding-bottom: 100px; */
+          /* padding-bottom: 240px; */
+          background: radial-gradient(1000px 500px at 85% 10%, #1C2F6E 0%, transparent 60%), linear-gradient(135deg, #0D163F 0%, #0D163F 55%, #070C24 100%);
+          /* background:
+            radial-gradient(
+              1000px 500px at 85% 10%,
+              #103710 0%,
+              transparent 60%
+            ),
+            linear-gradient(135deg, #103710 0%, #103710 55%, #103710 100%); */
+        }
+        .hero2::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-image: radial-gradient(
+            rgba(255, 255, 255, 0.12) 1px,
+            transparent 1px
+          );
+          background-size: 26px 26px;
+          mask-image: linear-gradient(to bottom, #000 30%, transparent 90%);
+          -webkit-mask-image: linear-gradient(
+            to bottom,
+            #000 30%,
+            transparent 90%
+          );
+        }
+        .hero2 .blob {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(70px);
+          opacity: 0.45;
+        }
+        .hero2 .b1 {
+          width: 340px;
+          height: 340px;
+          background: #25d366;
+          top: -90px;
+          left: -80px;
+        }
+        .hero2 .b2 {
+          width: 300px;
+          height: 300px;
+          background: #0ea5a5;
+          bottom: -120px;
+          right: 20%;
+        }
+        .pill2 {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: rgba(255, 255, 255, 0.12);
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          padding: 0.45rem 1rem;
+          border-radius: 50px;
+          font-weight: 600;
+          font-size: 0.85rem;
+          backdrop-filter: blur(6px);
+        }
+        .pill2 .dot {
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background: #4ade80;
+          box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.25);
+        }
+        .hero2 h1 {
+          font-weight: 800;
+          font-size: clamp(2.3rem, 5vw, 3.7rem);
+          line-height: 1.08;
+          letter-spacing: -1.5px;
+        }
+        .hero2 .grad {
+          background: linear-gradient(90deg, #86efac, #fde68a);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+        }
+        .lead2 {
+          font-size: 1.15rem;
+          color: rgba(255, 255, 255, 0.82);
+        }
+        .btn-lite {
+          background: #fff;
+          color: #065f3f;
+          border-radius: 50px;
+          padding: 0.85rem 1.8rem;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+        .btn-lite:hover {
+          background: #eafff4;
+          color: #065f3f;
+          transform: translateY(-2px);
+        }
+        .btn-outline-lite {
+          border: 2px solid rgba(255, 255, 255, 0.6);
+          color: #fff;
+          border-radius: 50px;
+          padding: 0.8rem 1.8rem;
+        }
+        .btn-outline-lite:hover {
+          background: #fff;
+          color: #065f3f;
+        }
+        .checks li {
+          font-size: 0.92rem;
+          font-weight: 600;
+          color: rgba(255, 255, 255, 0.9);
+        }
+        .stage {
+          position: relative;
+          max-width: 460px;
+          margin: auto;
+          padding: 20px;
+        }
+        .stage::before {
+          content: "";
+          position: absolute;
+          inset: 8% 4%;
+          border-radius: 40px;
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          transform: rotate(-4deg);
+        }
+        .stage .hero-img {
+          position: relative;
+          display: block;
+          width: 100%;
+          max-width: 380px;
+          margin: auto;
+          filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.35));
+        }
+        .float-card {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background: #fff;
+          color: #0f1f2e;
+          padding: 10px 16px 10px 12px;
+          border-radius: 16px;
+          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.25);
+          animation: floaty 5s ease-in-out infinite;
+        }
+        .float-card span {
+          font-size: 1.5rem;
+        }
+        .float-card b {
+          display: block;
+          font-size: 0.9rem;
+          line-height: 1.1;
+        }
+        .float-card small {
+          color: #5d6b78;
+          font-size: 0.75rem;
+        }
+        .fc1 {
+          top: 6%;
+          left: -4%;
+        }
+        .fc2 {
+          top: 46%;
+          right: -6%;
+          animation-delay: 1.2s;
+        }
+        .fc3 {
+          bottom: 6%;
+          left: -2%;
+          animation-delay: 2.4s;
+        }
+        @keyframes floaty {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-12px);
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .float-card {
+            animation: none;
+          }
+        }
+        .works-with {
+          margin-top: 50px;
+          padding-top: 26px;
+          border-top: 1px solid rgba(255, 255, 255, 0.15);
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px 14px;
+          justify-content: center;
+          align-items: center;
+        }
+        .works-with small {
+          opacity: 0.7;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: 700;
+          margin-right: 6px;
+        }
+        .works-with span {
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          padding: 0.35rem 0.95rem;
+          border-radius: 50px;
+          font-weight: 700;
+          font-size: 0.85rem;
+        }
+        @media (max-width: 991px) {
+          .hero2 {
+            padding-top: 130px;
+          }
+          .fc1 {
+            left: 0;
+          }
+          .fc2 {
+            right: 0;
+          }
+          .fc3 {
+            left: 0;
+          }
+        }
+
+        @media (max-width: 991px) {
+          .hero2 {
+            padding-bottom: 0;
+          }
+        
+        }
+      </style>
+      <style>
+        .hero2 .container {
+          z-index: 2;
+        }
+
+        .ico-fx {
+          position: absolute;
+          top: 130px;
+          bottom: 120px;
+          width: 200px;
+          z-index: 1;
+          pointer-events: none;
+        }
+        .ico-left {
+          left: 3%;
+        }
+        .ico-right {
+          right: 3%;
+        }
+
+        .ico {
+          position: absolute;
+          width: var(--s, 64px);
+          height: var(--s, 64px);
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          backdrop-filter: blur(6px);
+          box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+          animation: var(--a, icoFloat) var(--t, 6s) ease-in-out var(--d, 0s)
+            infinite;
+        }
+        .ico svg {
+          width: 46%;
+          height: 46%;
+          fill: none;
+          stroke: #86efac;
+          stroke-width: 1.8;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        /* soft pulse ring behind every icon */
+        .ico::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          border: 1px solid rgba(134, 239, 172, 0.5);
+          animation: icoRing 3s ease-out var(--d, 0s) infinite;
+        }
+        /* WhatsApp green highlight icon */
+        .ico.solid {
+          background: #25d366;
+          border-color: #25d366;
+        }
+        .ico.solid svg {
+          stroke: #0b3d1a;
+        }
+
+        /* positions - LEFT */
+        .ico-left .i1 {
+          top: 10px;
+          left: 50px;
+          --s: 76px;
+          --a: icoFloat;
+          --t: 6s;
+          --d: 0s;
+        }
+        .ico-left .i2 {
+          top: 140px;
+          left: 0;
+          --s: 62px;
+          --a: icoDrift;
+          --t: 8s;
+          --d: 1s;
+        }
+        .ico-left .i3 {
+          top: 260px;
+          left: 80px;
+          --s: 66px;
+          --a: icoSway;
+          --t: 5s;
+          --d: 2s;
+        }
+        /* positions - RIGHT */
+        .ico-right .i4 {
+          top: 0;
+          right: 70px;
+          --s: 64px;
+          --a: icoSway;
+          --t: 5.5s;
+          --d: 0.5s;
+        }
+        .ico-right .i5 {
+          top: 120px;
+          right: 0;
+          --s: 76px;
+          --a: icoFloat;
+          --t: 7s;
+          --d: 1.5s;
+        }
+        .ico-right .i6 {
+          top: 260px;
+          right: 60px;
+          --s: 62px;
+          --a: icoDrift;
+          --t: 9s;
+          --d: 2.5s;
+        }
+
+        @keyframes icoFloat {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-18px);
+          }
+        }
+        @keyframes icoDrift {
+          0%,
+          100% {
+            transform: translate(0, 0);
+          }
+          25% {
+            transform: translate(14px, -10px);
+          }
+          50% {
+            transform: translate(0, -20px);
+          }
+          75% {
+            transform: translate(-14px, -8px);
+          }
+        }
+        @keyframes icoSway {
+          0%,
+          100% {
+            transform: translateY(0) rotate(-8deg);
+          }
+          50% {
+            transform: translateY(-14px) rotate(8deg);
+          }
+        }
+        @keyframes icoRing {
+          0% {
+            transform: scale(1);
+            opacity: 0.7;
+          }
+          100% {
+            transform: scale(1.7);
+            opacity: 0;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          .ico-fx {
+            display: none;
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .ico,
+          .ico::after {
+            animation: none;
+          }
+        }
+      </style>
+      <section class="hero2" id="top">
+        <span class="blob b1"></span><span class="blob b2"></span>
+        <!-- LEFT SIDE ICONS -->
+        <!-- <div class="ico-fx ico-left" aria-hidden="true">
+         
+          <div class="ico solid i1">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"
+              />
+            </svg>
+          </div>
+         
+          <div class="ico i2">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 6h15l-2 9H8L6 3H3" />
+              <circle cx="9" cy="20" r="1" />
+              <circle cx="18" cy="20" r="1" />
+            </svg>
+          </div>
+         
+          <div class="ico i3">
+            <svg viewBox="0 0 24 24">
+              <path d="M1 3h15v13H1z" />
+              <path d="M16 8h4l3 3v5h-7z" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg>
+          </div>
+        </div> -->
+
+        <!-- RIGHT SIDE ICONS -->
+        <!-- <div class="ico-fx ico-right" aria-hidden="true">
+          
+          <div class="ico i4">
+            <svg viewBox="0 0 24 24">
+              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+              <path d="M13.7 21a2 2 0 0 1-3.4 0" />
+            </svg>
+          </div>
+          
+          <div class="ico solid i5">
+            <svg viewBox="0 0 24 24">
+              <path d="M22 11v1a10 10 0 1 1-5.9-9.1" />
+              <path d="M22 4L12 14l-3-3" />
+            </svg>
+          </div>
+          
+          <div class="ico i6">
+            <svg viewBox="0 0 24 24">
+              <path d="M20 12v10H4V12" />
+              <path d="M2 7h20v5H2z" />
+              <path d="M12 22V7" />
+              <path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7z" />
+              <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+            </svg>
+          </div>
+        </div> -->
+        <div class="container position-relative" data-aos="fade-up">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-9 mx-auto text-center text-white">
+              <span class="pill2"
+                ><i class="dot"></i> Official WhatsApp Business API for
+                Ecommerce</span
+              >
+              <h1 class="font-heading mt-4 hero-letters">
+                Unlock Business <span class="grad">Growth</span>
+              </h1>
+              <p class="lead2 my-4">
+                Confirm COD orders, recover abandoned carts, share tracking
+                updates and run personalised campaigns, automatically, for
+                Shopify, WooCommerce or your own website.
+              </p>
+              <div class="d-flex gap-3 justify-content-center">
+                <a href="#" class="btn btn-lite">Get Started</a>
+                <a href="#templates" class="btn btn-outline-lite">Book Demo</a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="trust"
+            class="trust"
+            data-testid="trust-logo-cloud"
+            data-aos="fade-up"
+          >
+            <div class="">
+              <!-- <p class="trust-label reveal">
+                WhatsApp Blue Tick Verified Customers
+              </p> -->
+
+              <div class="marquee" aria-label="Customer logos">
+                <div class="marquee-track">
+                  <div>
+                    <img
+                      src="assets/images/growit.png"
+                      class="w-100"
+                      alt="Sakhiya Skin Care"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/hisabkitab.png"
+                      class="w-100"
+                      alt="IVY Growth"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/ivy.png"
+                      class="w-100"
+                      alt="Zorko"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/mcat.png"
+                      class="w-100"
+                      alt="Stockbox"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/rogue.png"
+                      class="w-100"
+                      alt="Hisabkitab"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/pedalstart.png"
+                      class="w-100"
+                      alt="Marwari Catalyst"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/sakhiya.png"
+                      class="w-100"
+                      alt="Marwari Catalyst"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PROBLEM / SOLUTION ==================== -->
+      <!-- <section id="problem" class="section">
+        <div class="container">
+          <div class="sec-head text-center mx-auto">
+            <p class="chapter-label justify-content-center reveal">Core Capabilities</p>
+            <h2 class="font-heading reveal" data-delay="0.08">
+              Your customers are on WhatsApp.<span style="color: #09AF72 ;"> Your business should be too.</span>
+            </h2>
+            <p class="sub reveal" data-delay="0.16">
+              Growing businesses hit the same wall — conversations scale faster
+              than the tools holding them.
+            </p>
+          </div>
+          <div class="ps-grid">
+            <div class="ps-cards">
+              <div class="reveal">
+                <div class="p-card" data-testid="problem-card-0">
+                  <div class="top">
+                    <span class="p-ic"
+                      ><svg class="ic ic-17">
+                        <use href="#i-x-circle" /></svg></span
+                    ><span class="num">01</span>
+                  </div>
+                  <h3 class="font-heading">Conversations everywhere, control nowhere</h3>
+                  <p>
+                    Customer chats live on personal phones and the free Business
+                    app. No ownership, no history, no visibility when someone
+                    leaves.
+                  </p>
+                </div>
+              </div>
+              <div class="reveal" data-delay="0.08">
+                <div class="p-card" data-testid="problem-card-1">
+                  <div class="top">
+                    <span class="p-ic"
+                      ><svg class="ic ic-17">
+                        <use href="#i-x-circle" /></svg></span
+                    ><span class="num">02</span>
+                  </div>
+                  <h3 class="font-heading">Leads slip through the cracks</h3>
+                  <p>
+                    Slow manual replies and missed follow-ups quietly kill deals
+                    that were already warm and ready to buy.
+                  </p>
+                </div>
+              </div>
+              <div class="reveal" data-delay="0.16">
+                <div class="p-card" data-testid="problem-card-2">
+                  <div class="top">
+                    <span class="p-ic"
+                      ><svg class="ic ic-17">
+                        <use href="#i-x-circle" /></svg></span
+                    ><span class="num">03</span>
+                  </div>
+                  <h3 class="font-heading">Teams can't scale on one phone</h3>
+                  <p>
+                    One device, one person, zero routing. Growing volume means
+                    chaos, duplicated replies and burnt-out agents.
+                  </p>
+                </div>
+              </div>
+              <div class="reveal" data-delay="0.24">
+                <div class="p-card" data-testid="problem-card-3">
+                  <div class="top">
+                    <span class="p-ic"
+                      ><svg class="ic ic-17">
+                        <use href="#i-x-circle" /></svg></span
+                    ><span class="num">04</span>
+                  </div>
+                  <h3 class="font-heading">Broadcasts that risk your number</h3>
+                  <p>
+                    Unofficial bulk tools get numbers banned. Without the
+                    official API, every campaign is a gamble with your brand.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="reveal" data-delay="0.2" style="height: 100%">
+              <div class="solution-card" data-testid="solution-card-11za">
+                <div class="dots dot-grid-dark" aria-hidden="true"></div>
+                <div class="blob" aria-hidden="true"></div>
+                <div>
+                  <span class="chip-dark">The 11za way</span>
+                  <h3 class="font-heading">
+                    One number.<br> One inbox.<br> Every conversation under control.
+                  </h3>
+                  <p>
+                    11za puts your whole team on the official WhatsApp Business
+                    API — with automation, campaigns and analytics built in, so
+                    nothing slips and everything scales.
+                  </p>
+                </div>
+                <a
+                  href="https://calendly.com/engees/schedule-a-demo"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="link-arrow"
+                  data-testid="solution-cta-demo"
+                  >See how it works</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Core Capabilities Section -->
+      <!-- Core Capabilities Section with Book Demo CTA (No Form) -->
+      <!-- <section class="py-5 bg-light" id="capabilities" data-aos="fade-up">
+        <div class="container py-4">
+          
+          <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+              <span
+                class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-3"
+                >Platform Features</span
+              >
+              <h2 class="font-heading fw-bold display-6 text-dark mb-3">
+                Core Capabilities of 11za
+              </h2>
+              <p class="text-secondary lead fs-6">
+                Empower your WhatsApp communication with powerful tools for
+                customer chat, marketing broadcasts, intelligent automations,
+                and enterprise integrations.
+              </p>
+            </div>
+          </div>
+
+         
+          <div class="row g-4 align-items-stretch">
+           
+            <div class="col-12 col-xl-8">
+              <div class="row g-4">
+                
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
+                  >
+                    <div
+                      class="rounded-3 d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success fs-3 p-3 mb-4"
+                      style="width: 56px; height: 56px"
+                    >
+                      <i class="bi bi-chat-dots-fill"></i>
+                    </div>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Chat</h3>
+                    <ul
+                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                    >
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Shared Team Inbox:</strong> Single central
+                          WhatsApp API number.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Auto-Assignment:</strong> Route chats based
+                          on agent load.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Internal Notes:</strong> Tag teammates inside
+                          conversation threads.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Rich Media:</strong> Support interactive
+                          buttons, catalogs & files.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+               
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
+                  >
+                    <div
+                      class="rounded-3 d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary fs-3 p-3 mb-4"
+                      style="width: 56px; height: 56px"
+                    >
+                      <i class="bi bi-megaphone-fill"></i>
+                    </div>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Broadcast</h3>
+                    <ul
+                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                    >
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Bulk Messaging:</strong> Reach thousands with
+                          targeted campaigns.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Campaign Scheduler:</strong> Time broadcasts
+                          for peak response hours.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Dynamic Variables:</strong> Personalize
+                          messages per user data.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Real-time Analytics:</strong> Track open
+                          rates, delivery & failures.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
+                  >
+                    <div
+                      class="rounded-3 d-inline-flex align-items-center justify-content-center fs-3 p-3 mb-4"
+                      style="
+                        width: 56px;
+                        height: 56px;
+                        background-color: rgba(147, 51, 234, 0.1);
+                        color: #9333ea;
+                      "
+                    >
+                      <i class="bi bi-robot"></i>
+                    </div>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Automation</h3>
+                    <ul
+                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                    >
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>No-Code Bot Builder:</strong> Deploy 24/7
+                          interactive chatbots.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Order Updates:</strong> Automatic receipts &
+                          shipping alerts.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Abandoned Cart:</strong> Automated recovery
+                          reminders.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Auto-Replies:</strong> Out-of-office &
+                          greeting triggers.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+               
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
+                  >
+                    <div
+                      class="rounded-3 d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning fs-3 p-3 mb-4"
+                      style="width: 56px; height: 56px"
+                    >
+                      <i class="bi bi-diagram-3-fill"></i>
+                    </div>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Integration</h3>
+                    <ul
+                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                    >
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>E-Commerce:</strong> Direct Shopify &
+                          WooCommerce sync.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>CRM Connections:</strong> HubSpot, Zoho &
+                          Meta Lead Ads.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Payment Gateways:</strong> Razorpay & Pabbly
+                          workflows.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Custom APIs:</strong> Webhooks for ERPs &
+                          external platforms.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        
+            <div class="col-12 col-xl-4">
+              <div
+                class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-dark text-white h-100 d-flex flex-column justify-content-between position-relative overflow-hidden"
+              >
+               
+                <div
+                  class="position-absolute top-0 end-0 bg-success opacity-20 rounded-circle"
+                  style="
+                    width: 200px;
+                    height: 200px;
+                    filter: blur(60px);
+                    margin-top: -50px;
+                    margin-right: -50px;
+                  "
+                ></div>
+                <div
+                  class="position-absolute bottom-0 start-0 bg-primary opacity-20 rounded-circle"
+                  style="
+                    width: 200px;
+                    height: 200px;
+                    filter: blur(60px);
+                    margin-bottom: -50px;
+                    margin-left: -50px;
+                  "
+                ></div>
+
+                <div class="position-relative z-1 my-auto">
+                  <h3 class="font-heading fw-bold display-6 text-white mb-3">
+                    Ready to transform your customer support & sales?
+                  </h3>
+                  <p class="text-secondary text-light opacity-75 fs-6 mb-4">
+                    Book a 1-on-1 walk-through with our WhatsApp API
+                    specialists. We'll show you how to automate workflows, set
+                    up chatbots, and run successful campaign broadcasts.
+                  </p>
+
+                  <ul
+                    class="list-unstyled d-flex flex-column gap-2 mb-4 text-light opacity-90 small"
+                  >
+                    <li class="d-flex align-items-center gap-2">
+                      <i class="bi bi-check2 text-success fw-bold fs-5"></i>
+                      <span>30-minute interactive live walkthrough</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-2">
+                      <i class="bi bi-check2 text-success fw-bold fs-5"></i>
+                      <span>Custom pricing & integration strategy</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-2">
+                      <i class="bi bi-check2 text-success fw-bold fs-5"></i>
+                      <span>WhatsApp Business API verification guide</span>
+                    </li>
+                  </ul>
+
+                  <div class="d-grid gap-3">
+                    <a
+                      href="#book-demo"
+                      class="btn btn-success btn-lg fw-bold py-3 shadow-sm d-flex align-items-center justify-content-center gap-2"
+                    >
+                      <span>Book a Live Demo</span>
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style>
+          .capability-card {
+            transition:
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+          }
+          .capability-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+          }
+        </style>
+      </section> -->
+      <section
+        class="py-5 bg-light position-relative overflow-hidden"
+        id="capabilities"
+        data-aos="fade-up"
+      >
+        <div class="container py-4">
+          <!-- Section Header -->
+          <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+              <span
+                class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-3"
+                >Platform Features</span
+              >
+              <h2 class="font-heading fw-bold display-6 text-dark mb-3">
+                Core Capabilities of 11za
+              </h2>
+              <p class="text-secondary lead fs-6">
+                Empower your WhatsApp communication with powerful tools for
+                customer chat, marketing broadcasts, intelligent automations,
+                and enterprise integrations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Main Content Layout: Capabilities Grid (Left) + Animated Hero Demo Mockup (Right) -->
+          <div class="row g-4 align-items-stretch">
+            <!-- Left Column: 4 Capabilities Cards (2x2 Grid) -->
+            <div class="col-12 col-xl-7">
+              <div class="row g-4">
+                <!-- 1. Chat -->
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
+                  >
+                    <div
+                      class="rounded-3 d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success fs-3 p-3 mb-4"
+                      style="width: 56px; height: 56px"
+                    >
+                      <i class="bi bi-chat-dots-fill"></i>
+                    </div>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Chat</h3>
+                    <ul
+                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                    >
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span><strong>Shared Team Inbox:</strong> Single central
+                          WhatsApp API number.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span><strong>Auto-Assignment:</strong> Route chats based
+                          on agent load.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span><strong>Internal Notes:</strong> Tag teammates inside
+                          conversation threads.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span><strong>Rich Media:</strong> Support interactive
+                          buttons, catalogs & files.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 2. Broadcast -->
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
+                  >
+                    <div
+                      class="rounded-3 d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary fs-3 p-3 mb-4"
+                      style="width: 56px; height: 56px"
+                    >
+                      <i class="bi bi-megaphone-fill"></i>
+                    </div>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Broadcast</h3>
+                    <ul
+                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                    >
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Bulk Messaging:</strong> Reach thousands with
+                          targeted campaigns.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Campaign Scheduler:</strong> Time broadcasts
+                          for peak response hours.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Dynamic Variables:</strong> Personalize
+                          messages per user data.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Real-time Analytics:</strong> Track open
+                          rates, delivery & failures.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 3. Automation -->
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
+                  >
+                    <div
+                      class="rounded-3 d-inline-flex align-items-center justify-content-center fs-3 p-3 mb-4"
+                      style="
+                        width: 56px;
+                        height: 56px;
+                        background-color: rgba(147, 51, 234, 0.1);
+                        color: #9333ea;
+                      "
+                    >
+                      <i class="bi bi-robot"></i>
+                    </div>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Automation</h3>
+                    <ul
+                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                    >
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>No-Code Bot Builder:</strong> Deploy 24/7
+                          interactive chatbots.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Order Updates:</strong> Automatic receipts &
+                          shipping alerts.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Abandoned Cart:</strong> Automated recovery
+                          reminders.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Auto-Replies:</strong> Out-of-office &
+                          greeting triggers.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 4. Integration -->
+                <div class="col-12 col-md-6">
+                  <div
+                    class="card h-100 border-0 shadow-sm rounded-4 p-4 capability-card"
+                  >
+                    <div
+                      class="rounded-3 d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning fs-3 p-3 mb-4"
+                      style="width: 56px; height: 56px"
+                    >
+                      <i class="bi bi-diagram-3-fill"></i>
+                    </div>
+                    <h3 class="font-heading h5 fw-bold text-dark mb-3">Integration</h3>
+                    <ul
+                      class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2"
+                    >
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>E-Commerce:</strong> Direct Shopify &
+                          WooCommerce sync.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>CRM Connections:</strong> HubSpot, Zoho &
+                          Meta Lead Ads.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Payment Gateways:</strong> Razorpay & Pabbly
+                          workflows.</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-start gap-2">
+                        <i
+                          class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"
+                        ></i>
+                        <span
+                          ><strong>Custom APIs:</strong> Webhooks for ERPs &
+                          external platforms.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Animated Hero Graphic CTA -->
+            <div class="col-12 col-xl-5 mt-4 d-flex">
+              <div
+                class="za-chat-wrap w-100 rounded-4 shadow-lg"
+                id="zaChatWrap"
+              >
+                <div class="za-glow za-glow-green"></div>
+                <div class="za-glow za-glow-purple"></div>
+
+                <!-- Header -->
+                <div class="za-chat-head">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="za-avatar">R</div>
+                    <div>
+                      <div class="fw-semibold small text-dark">Riya Sharma</div>
+                      <div class="za-sub" id="zaStatus">online</div>
+                    </div>
+                  </div>
+                  <span class="za-chip" id="zaChannel"
+                    ><i class="bi bi-whatsapp"></i> WhatsApp API</span
+                  >
+                </div>
+
+                <!-- Messages (filled by JS) -->
+                <div
+                  class="za-chat-body"
+                  id="zaChatBody"
+                  aria-live="polite"
+                ></div>
+
+                <!-- Footer -->
+                <div class="za-chat-foot">
+                  <div
+                    class="d-flex align-items-center gap-2 small text-secondary mb-3"
+                  >
+                    <span class="live-indicator"></span>
+                    <span class="fw-medium"
+                      >11za bot live · 98.4% delivery · Meta Verified</span
+                    >
+                  </div>
+                  <a
+                    href="#book-demo"
+                    class="btn btn-success btn-lg w-100 fw-bold py-3 d-flex align-items-center justify-content-center gap-2 btn-glow"
+                  >
+                    <span>Book a Live Demo</span
+                    ><i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style>
+          /* Card Hover Styling */
+          .capability-card {
+            transition:
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+          }
+          .capability-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+          }
+
+          /* Stylish Light Mockup Interface */
+          .za-chat-wrap {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 520px;
+            overflow: hidden;
+            background: linear-gradient(180deg, #ffffff 0%, #f4f7f6 100%);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+          }
+          .za-glow {
+            position: absolute;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+          }
+          .za-glow-green {
+            top: -70px;
+            right: -70px;
+            background: rgba(25, 135, 84, 0.12);
+          }
+          .za-glow-purple {
+            bottom: -70px;
+            left: -70px;
+            background: rgba(147, 51, 234, 0.08);
+          }
+
+          .za-chat-head {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 18px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+          }
+          .za-avatar {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #198754;
+            color: #fff;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(25, 135, 84, 0.25);
+          }
+          .za-sub {
+            font-size: 0.72rem;
+            color: #6c757d;
+          }
+          .za-chip {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #198754;
+            background: rgba(25, 135, 84, 0.1);
+            border: 1px solid rgba(25, 135, 84, 0.2);
+            padding: 4px 10px;
+            border-radius: 999px;
+            display: inline-flex;
+            gap: 6px;
+            align-items: center;
+          }
+
+          .za-chat-body {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            height: 340px;
+            overflow: hidden;
+            padding: 16px 16px 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 10px;
+          }
+          .za-msg {
+            max-width: 84%;
+            padding: 10px 14px;
+            border-radius: 12px;
+            font-size: 0.84rem;
+            line-height: 1.4;
+            animation: zaPop 0.35s ease both;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+          }
+          .za-in {
+            align-self: flex-start;
+            background: #ffffff;
+            color: #212529;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-top-left-radius: 2px;
+          }
+          .za-out {
+            align-self: flex-end;
+            background: #e8f5e9;
+            color: #0f5132;
+            border: 1px solid rgba(25, 135, 84, 0.15);
+            border-top-right-radius: 2px;
+          }
+          .za-out.agent {
+            background: #f3e8ff;
+            color: #581c87;
+            border: 1px solid rgba(147, 51, 234, 0.15);
+          }
+          .za-who {
+            display: block;
+            font-size: 0.66rem;
+            font-weight: 700;
+            color: #198754;
+            margin-bottom: 2px;
+          }
+          .za-out.agent .za-who {
+            color: #9333ea;
+          }
+          .za-time {
+            display: block;
+            text-align: right;
+            font-size: 0.62rem;
+            color: #6c757d;
+            margin-top: 3px;
+          }
+          .za-btn {
+            display: block;
+            margin-top: 8px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.78rem;
+            color: #0d6efd;
+            background: rgba(13, 110, 253, 0.08);
+            border-radius: 8px;
+            padding: 6px;
+          }
+
+          .za-event {
+            align-self: center;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #495057;
+            background: #ffffff;
+            border: 1px dashed #ced4da;
+            padding: 4px 12px;
+            border-radius: 999px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+            animation: zaPop 0.35s ease both;
+          }
+          .za-event i {
+            color: #d97706;
+          }
+
+          .za-typing {
+            align-self: flex-end;
+            background: #e8f5e9;
+            padding: 10px 14px;
+            border-radius: 12px;
+            display: flex;
+            gap: 4px;
+            border: 1px solid rgba(25, 135, 84, 0.15);
+          }
+          .za-typing span {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #198754;
+            animation: zaDot 1.2s infinite;
+          }
+          .za-typing span:nth-child(2) {
+            animation-delay: 0.2s;
+          }
+          .za-typing span:nth-child(3) {
+            animation-delay: 0.4s;
+          }
+
+          .za-chat-foot {
+            position: relative;
+            z-index: 2;
+            padding: 16px 18px 18px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+          }
+
+          /* Pulse Indicator */
+          .live-indicator {
+            width: 8px;
+            height: 8px;
+            background-color: #198754;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(25, 135, 84, 0.7);
+            animation: indicatorPulse 1.8s infinite;
+          }
+
+          @keyframes indicatorPulse {
+            0% {
+              box-shadow: 0 0 0 0 rgba(25, 135, 84, 0.7);
+            }
+            70% {
+              box-shadow: 0 0 0 8px rgba(25, 135, 84, 0);
+            }
+            100% {
+              box-shadow: 0 0 0 0 rgba(25, 135, 84, 0);
+            }
+          }
+
+          /* Interactive Button Glow */
+          .btn-glow {
+            transition: all 0.3s ease;
+          }
+          .btn-glow:hover {
+            box-shadow: 0 6px 20px rgba(25, 135, 84, 0.35) !important;
+            transform: translateY(-2px);
+          }
+
+          @keyframes zaPop {
+            from {
+              opacity: 0;
+              transform: translateY(10px) scale(0.97);
+            }
+            to {
+              opacity: 1;
+              transform: none;
+            }
+          }
+          @keyframes zaDot {
+            0%,
+            60%,
+            100% {
+              transform: translateY(0);
+              opacity: 0.4;
+            }
+            30% {
+              transform: translateY(-4px);
+              opacity: 1;
+            }
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .za-msg,
+            .za-event {
+              animation: none;
+            }
+            .za-typing span {
+              animation: none;
+            }
+          }
+        </style>
+
+        <script>
+          (function () {
+            var body = document.getElementById("zaChatBody");
+            var statusEl = document.getElementById("zaStatus");
+            var wrap = document.getElementById("zaChatWrap");
+            if (!body || !wrap) return;
+
+            var script = [
+              {
+                t: "event",
+                icon: "bi-megaphone-fill",
+                text: "New lead · Click-to-WhatsApp ad",
+              },
+              {
+                t: "in",
+                text: "Hi! Is the Bandhani kurta set available in size M?",
+                time: "10:02",
+              },
+              {
+                t: "bot",
+                text: "Hi Riya 👋 Yes, size M is in stock. Here is the catalog:",
+                btn: "View Catalog",
+                time: "10:02",
+              },
+              { t: "in", text: "Let me think about it…", time: "10:05" },
+              {
+                t: "event",
+                icon: "bi-lightning-charge-fill",
+                text: "Trigger: Cart Abandonment · +30 min",
+              },
+              {
+                t: "bot",
+                text: "Your cart is waiting! Get an extra 10% OFF if you order now.",
+                btn: "Pay with Razorpay",
+                time: "10:35",
+              },
+              { t: "in", text: "Done ✅", time: "10:37" },
+              {
+                t: "event",
+                icon: "bi-diagram-3-fill",
+                text: "Order synced to Shopify & HubSpot",
+              },
+              {
+                t: "event",
+                icon: "bi-person-check-fill",
+                text: "Auto-assigned to Aman · lowest load",
+              },
+              {
+                t: "agent",
+                text: "Hi Riya, Aman here. Your order ships tomorrow 📦",
+                time: "10:38",
+              },
+            ];
+
+            var run = 0,
+              timers = [];
+            function later(fn, ms) {
+              var id = setTimeout(fn, ms);
+              timers.push(id);
+            }
+            function clearAll() {
+              timers.forEach(clearTimeout);
+              timers = [];
+            }
+
+            function add(step) {
+              var el = document.createElement("div");
+              if (step.t === "event") {
+                el.className = "za-event";
+                el.innerHTML =
+                  '<i class="bi ' +
+                  step.icon +
+                  '"></i><span>' +
+                  step.text +
+                  "</span>";
+              } else {
+                var out = step.t !== "in";
+                el.className =
+                  "za-msg " +
+                  (out ? "za-out" : "za-in") +
+                  (step.t === "agent" ? " agent" : "");
+                el.innerHTML =
+                  (out
+                    ? '<span class="za-who">' +
+                      (step.t === "agent" ? "Agent Aman" : "11za Bot") +
+                      "</span>"
+                    : "") +
+                  step.text +
+                  (step.btn
+                    ? '<span class="za-btn"><i class="bi bi-box-arrow-up-right me-1"></i>' +
+                      step.btn +
+                      "</span>"
+                    : "") +
+                  '<span class="za-time">' +
+                  step.time +
+                  (out ? " ✓✓" : "") +
+                  "</span>";
+              }
+              body.appendChild(el);
+              while (body.children.length > 6)
+                body.removeChild(body.firstChild);
+            }
+
+            function play(i, token) {
+              if (token !== run) return;
+              if (i >= script.length) {
+                later(function () {
+                  restart();
+                }, 4000);
+                return;
+              }
+              var s = script[i];
+              var isOut = s.t === "bot" || s.t === "agent";
+              statusEl.textContent = isOut ? "replying…" : "online";
+              if (isOut) {
+                var typing = document.createElement("div");
+                typing.className = "za-typing";
+                typing.innerHTML = "<span></span><span></span><span></span>";
+                body.appendChild(typing);
+                later(function () {
+                  if (token !== run) return;
+                  typing.remove();
+                  add(s);
+                  later(function () {
+                    play(i + 1, token);
+                  }, 1100);
+                }, 1000);
+              } else {
+                add(s);
+                later(function () {
+                  play(i + 1, token);
+                }, 1100);
+              }
+            }
+
+            function restart() {
+              clearAll();
+              run++;
+              body.innerHTML = "";
+              play(0, run);
+            }
+
+            // Reduced motion: render everything at once
+            if (
+              window.matchMedia &&
+              matchMedia("(prefers-reduced-motion: reduce)").matches
+            ) {
+              script.forEach(add);
+              return;
+            }
+
+            // Start / pause only while visible
+            if ("IntersectionObserver" in window) {
+              new IntersectionObserver(
+                function (e) {
+                  if (e[0].isIntersecting) restart();
+                  else {
+                    clearAll();
+                    run++;
+                  }
+                },
+                { threshold: 0.3 },
+              ).observe(wrap);
+            } else {
+              restart();
+            }
+          })();
+        </script>
+      </section>
+
+      <!-- Core Capabilities Section with Book Demo CTA (No Form) -->
+      <!-- <section class="py-5 bg-light" id="capabilities">
+  <div class="container py-4">
+    
+   
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-semibold mb-3">Platform Features</span>
+        <h2 class="font-heading fw-bold display-6 text-dark mb-3">Core Capabilities of 11za</h2>
+        <p class="text-secondary lead fs-6">Empower your WhatsApp communication with powerful tools for customer chat, marketing broadcasts, intelligent automations, and enterprise integrations.</p>
+      </div>
+    </div>
+
+       <div class="row g-4 align-items-stretch">
+      
+      
+      <div class="col-12 col-xl-8">
+        <div class="row g-4">
+          
+       
+          <div class="col-12 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden capability-card">
+              <img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Customer Support Chat Team" style="height: 180px;">
+              <div class="card-body p-4">
+                <div class="rounded-3 d-inline-flex align-items-center justify-content-center bg-success bg-opacity-10 text-success fs-3 p-3 mb-3" style="width: 50px; height: 50px;">
+                  <i class="bi bi-chat-dots-fill"></i>
+                </div>
+                <h3 class="font-heading h5 fw-bold text-dark mb-3">Chat</h3>
+                <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2">
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Shared Team Inbox:</strong> Single central WhatsApp API number.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Auto-Assignment:</strong> Route chats based on agent load.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Internal Notes:</strong> Tag teammates inside conversation threads.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Rich Media:</strong> Support interactive buttons, catalogs & files.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="col-12 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden capability-card">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Marketing Broadcast Analytics" style="height: 180px;">
+              <div class="card-body p-4">
+                <div class="rounded-3 d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary fs-3 p-3 mb-3" style="width: 50px; height: 50px;">
+                  <i class="bi bi-megaphone-fill"></i>
+                </div>
+                <h3 class="font-heading h5 fw-bold text-dark mb-3">Broadcast</h3>
+                <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2">
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Bulk Messaging:</strong> Reach thousands with targeted campaigns.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Campaign Scheduler:</strong> Time broadcasts for peak response hours.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Dynamic Variables:</strong> Personalize messages per user data.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Real-time Analytics:</strong> Track open rates, delivery & failures.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="col-12 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden capability-card">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="AI Automation & Chatbots" style="height: 180px;">
+              <div class="card-body p-4">
+                <div class="rounded-3 d-inline-flex align-items-center justify-content-center fs-3 p-3 mb-3" style="width: 50px; height: 50px; background-color: rgba(147, 51, 234, 0.1); color: #9333ea;">
+                  <i class="bi bi-robot"></i>
+                </div>
+                <h3 class="font-heading h5 fw-bold text-dark mb-3">Automation</h3>
+                <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2">
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>No-Code Bot Builder:</strong> Deploy 24/7 interactive chatbots.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Order Updates:</strong> Automatic receipts & shipping alerts.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Abandoned Cart:</strong> Automated recovery reminders.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Auto-Replies:</strong> Out-of-office & greeting triggers.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-12 col-md-6">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden capability-card">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Software Integration Hub" style="height: 180px;">
+              <div class="card-body p-4">
+                <div class="rounded-3 d-inline-flex align-items-center justify-content-center bg-warning bg-opacity-10 text-warning fs-3 p-3 mb-3" style="width: 50px; height: 50px;">
+                  <i class="bi bi-diagram-3-fill"></i>
+                </div>
+                <h3 class="font-heading h5 fw-bold text-dark mb-3">Integration</h3>
+                <ul class="list-unstyled text-secondary small mb-0 d-flex flex-column gap-2">
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>E-Commerce:</strong> Direct Shopify & WooCommerce sync.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>CRM Connections:</strong> HubSpot, Zoho & Meta Lead Ads.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Payment Gateways:</strong> Razorpay & Pabbly workflows.</span>
+                  </li>
+                  <li class="d-flex align-items-start gap-2">
+                    <i class="bi bi-check-circle-fill text-success flex-shrink-0 mt-1"></i>
+                    <span><strong>Custom APIs:</strong> Webhooks for ERPs & external platforms.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+     
+      <div class="col-12 col-xl-4">
+        <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-dark text-white h-100 d-flex flex-column justify-content-between position-relative overflow-hidden">
+             
+          <div class="position-relative z-1 my-auto">
+           
+            <h3 class="font-heading fw-bold display-6 text-white mb-3">Ready to transform your customer support & sales?</h3>
+            <p class="text-light opacity-75 fs-6 mb-4">Book a 1-on-1 walk-through with our WhatsApp API specialists. We'll show you how to automate workflows, set up chatbots, and run successful campaign broadcasts.</p>
+
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-4 text-light opacity-90 small">
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-check2 text-success fw-bold fs-5"></i>
+                <span>30-minute interactive live walkthrough</span>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-check2 text-success fw-bold fs-5"></i>
+                <span>Custom pricing & integration strategy</span>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <i class="bi bi-check2 text-success fw-bold fs-5"></i>
+                <span>WhatsApp Business API verification guide</span>
+              </li>
+            </ul>
+
+            <div class="d-grid gap-3">
+              <a href="#book-demo" class="btn btn-success btn-lg fw-bold py-3 shadow-sm d-flex align-items-center justify-content-center gap-2">
+                <span>Book a Live Demo</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="#contact-sales" class="btn btn-outline-light btn-lg fw-semibold py-2 fs-6">
+                Talk to Sales
+              </a>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-top border-secondary border-opacity-50 position-relative z-1 text-center">
+            <span class="text-light opacity-75 small">⚡ Quick setup • Free consultation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .capability-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .capability-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+    }
+  </style>
+</section> -->
+      <!-- ==================== FEATURES ==================== -->
+      <!-- <section id="features" class="section section-alt">
+        <div class="container">
+          <div class="sec-head text-center mx-auto">
+            <p class="chapter-label justify-content-center reveal">Core Capabilities</p>
+            <h2 class="font-heading reveal" data-delay="0.08">
+              Everything WhatsApp can do for business.<span style="color: #09AF72 ;">In one platform.</span>
+            </h2>
+            <p class="sub reveal" data-delay="0.16">
+              From the first hello to the closed deal — acquire, engage,
+              automate, support and convert without leaving 11za.
+            </p>
+          </div>
+          <div class="f-grid" data-testid="core-features-grid">
+            <div class="reveal f-span2">
+              <article
+                class="f-card"
+                data-testid="feature-card-whatsapp-business-api"
+              >
+                <div class="halo" aria-hidden="true"></div>
+                <div class="inner">
+                  <div class="top">
+                    <span class="f-ic"
+                      ><svg class="ic ic-20t">
+                        <use href="#i-message-square" /></svg></span
+                    ><span class="f-tag">Official API</span>
+                  </div>
+                  <h3 class="font-heading">WhatsApp Business API</h3>
+                  <p>
+                    Connect your number to the official WhatsApp Business
+                    Platform — verified, reliable and built to scale.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="reveal f-span2" data-delay="0.07">
+              <article class="f-card" data-testid="feature-card-team-inbox">
+                <div class="halo" aria-hidden="true"></div>
+                <div class="inner">
+                  <div class="top">
+                    <span class="f-ic"
+                      ><svg class="ic ic-20t">
+                        <use href="#i-users" /></svg></span
+                    ><span class="f-tag">Multi-agent</span>
+                  </div>
+                  <h3 class="font-heading">Team Inbox</h3>
+                  <p>
+                    Multiple agents on one number. Assign chats, add private
+                    notes, and monitor every customer interaction.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="reveal" data-delay="0.14">
+              <article
+                class="f-card"
+                data-testid="feature-card-whatsapp-automation"
+              >
+                <div class="halo" aria-hidden="true"></div>
+                <div class="inner">
+                  <div class="top">
+                    <span class="f-ic"
+                      ><svg class="ic ic-20t">
+                        <use href="#i-workflow" /></svg></span
+                    ><span class="f-tag">No-code</span>
+                  </div>
+                  <h3 class="font-heading">WhatsApp Automation</h3>
+                  <p>
+                    Automate repetitive conversations and journeys — from
+                    welcome flows to abandoned-cart recovery.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="reveal" data-delay="0.21">
+              <article class="f-card" data-testid="feature-card-chatbots">
+                <div class="halo" aria-hidden="true"></div>
+                <div class="inner">
+                  <div class="top">
+                    <span class="f-ic"
+                      ><svg class="ic ic-20t"><use href="#i-bot" /></svg></span
+                    ><span class="f-tag">24/7</span>
+                  </div>
+                  <h3 class="font-heading">Chatbots</h3>
+                  <p>
+                    Build personalised WhatsApp chatbots that answer, qualify
+                    and route customers around the clock.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="reveal">
+              <article
+                class="f-card"
+                data-testid="feature-card-broadcast-campaigns"
+              >
+                <div class="halo" aria-hidden="true"></div>
+                <div class="inner">
+                  <div class="top">
+                    <span class="f-ic"
+                      ><svg class="ic ic-20t">
+                        <use href="#i-megaphone" /></svg></span
+                    ><span class="f-tag">Targeted</span>
+                  </div>
+                  <h3 class="font-heading">Broadcast &amp; Campaigns</h3>
+                  <p>
+                    Send targeted template campaigns to segmented audiences —
+                    with delivery, read and reply tracking.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="reveal" data-delay="0.07">
+              <article
+                class="f-card"
+                data-testid="feature-card-lead-management"
+              >
+                <div class="halo" aria-hidden="true"></div>
+                <div class="inner">
+                  <div class="top">
+                    <span class="f-ic"
+                      ><svg class="ic ic-20t">
+                        <use href="#i-target" /></svg></span
+                    ><span class="f-tag">CRM-ready</span>
+                  </div>
+                  <h3 class="font-heading">Lead Management</h3>
+                  <p>
+                    Capture leads from IndiaMART, Facebook and your store. Tag,
+                    qualify and follow up before they go cold.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="reveal f-span2" data-delay="0.14">
+              <article class="f-card" data-testid="feature-card-analytics">
+                <div class="halo" aria-hidden="true"></div>
+                <div class="inner">
+                  <div class="top">
+                    <span class="f-ic"
+                      ><svg class="ic ic-20t">
+                        <use href="#i-bar-chart" /></svg></span
+                    ><span class="f-tag">Insight</span>
+                  </div>
+                  <h3 class="font-heading">Analytics</h3>
+                  <p>
+                    Track conversations, campaigns, agent performance and even
+                    Shopify &amp; WooCommerce order analytics.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="reveal f-span2" data-delay="0.21">
+              <article class="f-card" data-testid="feature-card-integrations">
+                <div class="halo" aria-hidden="true"></div>
+                <div class="inner">
+                  <div class="top">
+                    <span class="f-ic"
+                      ><svg class="ic ic-20t"><use href="#i-plug" /></svg></span
+                    ><span class="f-tag">50+ tools</span>
+                  </div>
+                  <h3 class="font-heading">Integrations</h3>
+                  <p>
+                    Connect Shopify, WooCommerce, TallyPrime, Shiprocket,
+                    Pabbly, Calendly and the rest of your stack.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- ==================== PRODUCT SHOWCASE ==================== -->
+      <section
+        id="showcase"
+        class="section py-5 position-relative overflow-hidden bg-light"
+        data-aos="fade-up"
+      >
+        <div class="container py-4">
+          <!-- Section Header -->
+          <div class="row justify-content-center text-center mb-4">
+            <div class="sec-head col-lg-8">
+              <p class="chapter-label justify-content-center reveal">Product Tour</p>
+              <h2 class="font-heading reveal" data-delay="0.08">
+                A workspace your whole team will love
+              </h2>
+              <p class="text-secondary lead fs-6">
+                Four views, one platform. Click through the product your team
+                will actually use every day.
+              </p>
+            </div>
+          </div>
+
+          <!-- Navigation Tabs & Dynamic Subtitle -->
+          <div class="row justify-content-center text-center mb-4">
+            <div class="col-12">
+              <div
+                class="show-tabs gap-2 p-2 bg-white rounded-pill shadow-sm border mb-3"
+                role="tablist"
+                data-testid="product-showcase-tab-list"
+              >
+                <button
+                  class="show-tab btn btn-sm rounded-pill px-4 py-2 fw-semibold active"
+                  role="tab"
+                  aria-selected="true"
+                  data-tab="inbox"
+                  data-blurb="Every customer conversation, one shared workspace."
+                >
+                  Inbox
+                </button>
+                <button
+                  class="show-tab btn btn-sm rounded-pill px-4 py-2 fw-semibold text-secondary"
+                  role="tab"
+                  aria-selected="false"
+                  data-tab="automation"
+                  data-blurb="Visual journeys that run while you sleep."
+                >
+                  Automation
+                </button>
+                <button
+                  class="show-tab btn btn-sm rounded-pill px-4 py-2 fw-semibold text-secondary"
+                  role="tab"
+                  aria-selected="false"
+                  data-tab="campaigns"
+                  data-blurb="Broadcasts with real delivery intelligence."
+                >
+                  Campaigns
+                </button>
+                <button
+                  class="show-tab btn btn-sm rounded-pill px-4 py-2 fw-semibold text-secondary"
+                  role="tab"
+                  aria-selected="false"
+                  data-tab="analytics"
+                  data-blurb="Know what every message earns you."
+                >
+                  Analytics
+                </button>
+              </div>
+
+              <!-- Dynamic Blurb -->
+              <p
+                class="show-blurb text-muted small fw-medium mb-0"
+                data-show-blurb
+              >
+                Every customer conversation, one shared workspace.
+              </p>
+            </div>
+          </div>
+
+          <!-- Showcase Stage (Panels containing 2 images each) -->
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-12">
+              <div class="show-stage position-relative">
+                <div
+                  class="show-frame position-relative z-1 rounded-4 overflow-hidden border shadow-lg bg-white p-3 p-md-4"
+                  data-testid="product-showcase-view-container"
+                >
+                  <!-- PANEL: INBOX (2 IMAGES) -->
+                  <div class="show-panel active h-100" data-panel="inbox">
+                    <div class="row g-3">
+                      <div class="col-12 col-md-8">
+                        <div
+                          class="card border-0 shadow-sm rounded-3 overflow-hidden"
+                        >
+                          <img
+                            src="assets/images/inbox-desktop.png"
+                            alt="Shared Team Inbox Desktop View"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div
+                          class="card border-0 shadow-sm rounded-3 overflow-hidden"
+                        >
+                          <img
+                            src="assets/images/inbox-mobile.png"
+                            alt="Mobile Chat App View"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PANEL: AUTOMATION (2 IMAGES) -->
+                  <div class="show-panel h-100" data-panel="automation">
+                    <div class="row g-3">
+                      <div class="col-12 col-md-8">
+                        <div
+                          class="card border-0 shadow-sm rounded-3 overflow-hidden"
+                        >
+                          <img
+                            src="assets/images/Automation-desktop.png"
+                            alt="Bot Flow Builder Interface"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div
+                          class="card border-0 shadow-sm rounded-3 overflow-hidden"
+                        >
+                          <img
+                            src="assets/images/Automation-mobile.png"
+                            alt="Automated Trigger Settings"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PANEL: CAMPAIGNS (2 IMAGES) -->
+                  <div class="show-panel h-100" data-panel="campaigns">
+                    <div class="row g-3">
+                      <div class="col-12 col-md-8">
+                        <div
+                          class="card border-0 shadow-sm rounded-3 overflow-hidden"
+                        >
+                          <img
+                            src="assets/images/campaign-desktop.png"
+                            alt="Broadcast Campaign Manager"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div
+                          class="card border-0 shadow-sm rounded-3 overflow-hidden"
+                        >
+                          <img
+                            src="assets/images/campaign-mobile.png"
+                            alt="Audience Segment Targeting"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PANEL: ANALYTICS (2 IMAGES) -->
+                  <div class="show-panel h-100" data-panel="analytics">
+                    <div class="row g-3">
+                      <div class="col-12 col-md-8">
+                        <div
+                          class="card border-0 shadow-sm rounded-3 overflow-hidden"
+                        >
+                          <img
+                            src="assets/images/Analysis-Desktop.png"
+                            alt="Revenue & ROI Analytics Dashboard"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div
+                          class="card border-0 shadow-sm rounded-3 overflow-hidden"
+                        >
+                          <img
+                            src="assets/images/Analysis-mobile.png"
+                            alt="Real-time Message Conversion Metrics"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const tabs = document.querySelectorAll(".show-tab");
+          const panels = document.querySelectorAll(".show-panel");
+          const blurb = document.querySelector("[data-show-blurb]");
+
+          tabs.forEach(function (tab) {
+            tab.addEventListener("click", function () {
+              const target = tab.getAttribute("data-tab");
+              const description = tab.getAttribute("data-blurb");
+
+              // Deactivate all tabs
+              tabs.forEach(function (item) {
+                item.classList.remove("active");
+                item.classList.add("text-secondary");
+                item.setAttribute("aria-selected", "false");
+              });
+
+              // Hide all panels
+              panels.forEach(function (panel) {
+                panel.classList.remove("active");
+              });
+
+              // Activate clicked tab
+              tab.classList.add("active");
+              tab.classList.remove("text-secondary");
+              tab.setAttribute("aria-selected", "true");
+
+              // Show matching panel
+              const targetPanel = document.querySelector(
+                '.show-panel[data-panel="' + target + '"]',
+              );
+              if (targetPanel) {
+                targetPanel.classList.add("active");
+              }
+
+              // Update description blurb
+              if (blurb && description) {
+                blurb.textContent = description;
+              }
+            });
+          });
+        });
+      </script>
+      <!-- ==================== AI ==================== -->
+      <!-- ============================================================
+     11za · AI VOICE SECTION
+     Replaces the "AI Engine / An AI teammate inside every conversation" section.
+     Needs Bootstrap 5 + Bootstrap Icons (CDN links below are safe to keep if already loaded).
+     ============================================================ -->
+      <style>
+        /* ---- Tokens: map these to your site's existing variables if they differ ---- */
+        .vz-aivoice {
+          --vz-primary: var(--primary, #16a34a);
+          --vz-primary-dark: var(--primary-dark, #0f7a37);
+          --vz-primary-soft: rgba(22, 163, 74, 0.1);
+          --vz-ink: var(--heading, #0f1f17);
+          --vz-text: var(--text, #5b6b62);
+          --vz-line: rgba(15, 31, 23, 0.1);
+          --vz-radius: 20px;
+          position: relative;
+          padding: 96px 0;
+          background:
+            radial-gradient(
+              900px 400px at 85% 10%,
+              var(--vz-primary-soft),
+              transparent 70%
+            ),
+            #f6faf7;
+          overflow: hidden;
+        }
+        .vz-aivoice *,
+        .vz-aivoice *::before,
+        .vz-aivoice *::after {
+          box-sizing: border-box;
+        }
+
+        /* ---- Left column ---- */
+        .vz-eyebrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 6px 14px;
+          border-radius: 999px;
+          background: var(--vz-primary-soft);
+          color: var(--vz-primary-dark);
+          font-size: 0.8rem;
+          font-weight: 600;
+          letter-spacing: 0.08em;
+        }
+        .vz-eyebrow i {
+          font-size: 0.95rem;
+        }
+        .vz-aivoice h2 {
+          margin: 18px 0 16px;
+          color: var(--vz-ink);
+          font-size: clamp(2rem, 4.2vw, 3.2rem);
+          line-height: 1.12;
+          font-weight: 700;
+          letter-spacing: -0.02em;
+        }
+        .vz-lead {
+          color: var(--vz-text);
+          font-size: 1.08rem;
+          line-height: 1.7;
+          max-width: 520px;
+          margin-bottom: 28px;
+        }
+
+        .vz-features {
+          list-style: none;
+          padding: 0;
+          margin: 0 0 32px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 14px;
+        }
+        .vz-feature {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 14px 16px;
+          background: #fff;
+          border: 1px solid var(--vz-line);
+          border-radius: 14px;
+          font-weight: 600;
+          font-size: 0.95rem;
+          color: var(--vz-ink);
+          transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            border-color 0.25s ease;
+        }
+        .vz-feature:hover {
+          transform: translateY(-3px);
+          border-color: rgba(22, 163, 74, 0.4);
+          box-shadow: 0 10px 24px rgba(15, 31, 23, 0.08);
+        }
+        .vz-feature .vz-ico {
+          flex: 0 0 38px;
+          height: 38px;
+          display: grid;
+          place-items: center;
+          border-radius: 10px;
+          background: var(--vz-primary-soft);
+          color: var(--vz-primary-dark);
+          font-size: 1.15rem;
+        }
+
+        .vz-btn {
+          padding: 12px 26px;
+          border-radius: 999px;
+          font-weight: 600;
+          transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            background 0.2s ease;
+        }
+        .vz-btn:hover {
+          transform: translateY(-2px);
+        }
+        .vz-btn-primary {
+          background: var(--vz-primary);
+          border: 1px solid var(--vz-primary);
+          color: #fff;
+          box-shadow: 0 8px 20px rgba(22, 163, 74, 0.28);
+        }
+        .vz-btn-primary:hover {
+          background: var(--vz-primary-dark);
+          border-color: var(--vz-primary-dark);
+          color: #fff;
+        }
+        .vz-btn-ghost {
+          background: #fff;
+          border: 1px solid var(--vz-line);
+          color: var(--vz-ink);
+        }
+        .vz-btn-ghost:hover {
+          border-color: var(--vz-primary);
+          color: var(--vz-primary-dark);
+        }
+
+        /* ---- Call card ---- */
+        .vz-call-wrap {
+          position: relative;
+          max-width: 480px;
+          margin-inline: auto;
+        }
+        .vz-call-wrap::before {
+          /* soft glow behind the card */
+          content: "";
+          position: absolute;
+          inset: 8% -6% -6% 8%;
+          z-index: 0;
+          background: radial-gradient(
+            circle,
+            rgba(22, 163, 74, 0.28),
+            transparent 65%
+          );
+          filter: blur(30px);
+        }
+        .vz-call {
+          position: relative;
+          z-index: 1;
+          background: #0e1a14;
+          color: #e8f3ec;
+          border-radius: 28px;
+          padding: 22px;
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          box-shadow: 0 30px 70px rgba(15, 31, 23, 0.35);
+          transition:
+            transform 0.35s ease,
+            box-shadow 0.35s ease;
+        }
+        .vz-call:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 38px 80px rgba(15, 31, 23, 0.42);
+        }
+
+        .vz-call-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 18px;
+        }
+        .vz-live {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+          font-size: 0.75rem;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          color: #ff6b6b;
+        }
+        .vz-live::before {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #ff4d4d;
+          animation: vz-blink 1.2s infinite;
+        }
+        .vz-timer {
+          font-variant-numeric: tabular-nums;
+          font-size: 0.95rem;
+          color: #a9c2b3;
+          display: inline-flex;
+          gap: 6px;
+          align-items: center;
+        }
+
+        .vz-agent {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+        .vz-avatar {
+          position: relative;
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          background: linear-gradient(135deg, #22c55e, #0f7a37);
+          color: #fff;
+          font-size: 1.5rem;
+          animation: vz-glow 2.6s ease-in-out infinite;
+        }
+        .vz-agent-name {
+          font-weight: 700;
+          font-size: 1.05rem;
+          line-height: 1.2;
+        }
+        .vz-status {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+          font-size: 0.85rem;
+          color: #7be3a1;
+        }
+        .vz-status .vz-dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #22c55e;
+          animation: vz-pulse 1.4s ease-out infinite;
+        }
+
+        .vz-wave {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 4px;
+          height: 74px;
+          margin: 18px 0 14px;
+          padding: 0 14px;
+          border-radius: 16px;
+          background: rgba(255, 255, 255, 0.04);
+        }
+        .vz-wave span {
+          width: 4px;
+          height: 100%;
+          border-radius: 4px;
+          transform-origin: center;
+          background: linear-gradient(180deg, #4ade80, #16a34a);
+          animation: vz-bar 1.1s ease-in-out infinite;
+          transform: scaleY(0.2);
+        }
+        .vz-wave.is-idle span {
+          animation-play-state: paused;
+          opacity: 0.35;
+        }
+
+        .vz-customer {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 12px;
+          margin-bottom: 14px;
+          border-radius: 12px;
+          background: rgba(255, 255, 255, 0.05);
+          font-size: 0.88rem;
+          color: #a9c2b3;
+        }
+        .vz-customer strong {
+          color: #fff;
+          font-weight: 600;
+        }
+        .vz-customer .vz-cav {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: #3b4f44;
+          display: grid;
+          place-items: center;
+          color: #fff;
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+
+        .vz-transcript {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          min-height: 250px;
+        }
+        .vz-msg {
+          max-width: 88%;
+          padding: 10px 14px;
+          border-radius: 16px;
+          font-size: 0.88rem;
+          line-height: 1.5;
+          opacity: 0;
+          transform: translateY(8px);
+          animation: vz-in 0.5s ease forwards;
+        }
+        .vz-msg small {
+          display: block;
+          margin-bottom: 2px;
+          font-size: 0.7rem;
+          font-weight: 700;
+          letter-spacing: 0.04em;
+          opacity: 0.75;
+        }
+        .vz-msg.ai {
+          align-self: flex-start;
+          background: rgba(34, 197, 94, 0.14);
+          border: 1px solid rgba(34, 197, 94, 0.28);
+          border-bottom-left-radius: 4px;
+        }
+        .vz-msg.cu {
+          align-self: flex-end;
+          background: rgba(255, 255, 255, 0.09);
+          border-bottom-right-radius: 4px;
+        }
+        .vz-typing {
+          align-self: flex-start;
+          display: inline-flex;
+          gap: 4px;
+          padding: 10px 14px;
+          border-radius: 16px;
+          background: rgba(34, 197, 94, 0.14);
+        }
+        .vz-typing i {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #4ade80;
+          animation: vz-blink 1s infinite;
+        }
+        .vz-typing i:nth-child(2) {
+          animation-delay: 0.15s;
+        }
+        .vz-typing i:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+
+        .vz-controls {
+          display: flex;
+          justify-content: center;
+          gap: 18px;
+          margin-top: 18px;
+          padding-top: 18px;
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .vz-ctrl {
+          width: 52px;
+          height: 52px;
+          border-radius: 50%;
+          border: 0;
+          display: grid;
+          place-items: center;
+          background: rgba(255, 255, 255, 0.1);
+          color: #fff;
+          font-size: 1.25rem;
+          cursor: pointer;
+          transition:
+            transform 0.2s ease,
+            background 0.2s ease;
+        }
+        .vz-ctrl:hover {
+          transform: scale(1.08);
+          background: rgba(255, 255, 255, 0.18);
+        }
+        .vz-ctrl:focus-visible {
+          outline: 3px solid #4ade80;
+          outline-offset: 3px;
+        }
+        .vz-ctrl.is-on {
+          background: #fff;
+          color: #0e1a14;
+        }
+        .vz-ctrl.vz-end {
+          background: #ef4444;
+        }
+        .vz-ctrl.vz-end:hover {
+          background: #dc2626;
+        }
+
+        /* ---- Animations ---- */
+        @keyframes vz-bar {
+          0%,
+          100% {
+            transform: scaleY(0.18);
+          }
+          50% {
+            transform: scaleY(1);
+          }
+        }
+        @keyframes vz-in {
+          to {
+            opacity: 1;
+            transform: none;
+          }
+        }
+        @keyframes vz-blink {
+          0%,
+          100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.25;
+          }
+        }
+        @keyframes vz-pulse {
+          0% {
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+          }
+          100% {
+            box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+          }
+        }
+        @keyframes vz-glow {
+          0%,
+          100% {
+            box-shadow:
+              0 0 0 4px rgba(34, 197, 94, 0.18),
+              0 0 18px rgba(34, 197, 94, 0.35);
+          }
+          50% {
+            box-shadow:
+              0 0 0 7px rgba(34, 197, 94, 0.1),
+              0 0 32px rgba(34, 197, 94, 0.6);
+          }
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 991.98px) {
+          .vz-aivoice {
+            padding: 72px 0;
+          }
+          .vz-lead {
+            max-width: none;
+          }
+        }
+        @media (max-width: 575.98px) {
+          .vz-aivoice {
+            padding: 56px 0;
+          }
+          .vz-features {
+            grid-template-columns: 1fr;
+          }
+          .vz-cta .btn {
+            width: 100%;
+          }
+          .vz-call {
+            padding: 16px;
+            border-radius: 22px;
+          }
+          .vz-transcript {
+            min-height: 270px;
+          }
+          .vz-msg {
+            max-width: 94%;
+          }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .vz-aivoice *,
+          .vz-aivoice *::before {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition: none !important;
+          }
+          .vz-msg {
+            opacity: 1;
+            transform: none;
+          }
+          .vz-wave span {
+            transform: scaleY(0.6);
+          }
+        }
+      </style>
+
+      <section
+        class="vz-aivoice"
+        id="ai-voice"
+        aria-labelledby="vz-aivoice-title"
+      >
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <!-- LEFT -->
+            <div class="col-lg-6">
+              <span class="vz-eyebrow"
+                ><i class="bi bi-mic-fill"></i> AI VOICE</span
+              >
+              <h2 class="font-heading" id="vz-aivoice-title">
+                Talk to Your Customers. Automatically.
+              </h2>
+              <p class="vz-lead">
+                11za AI Voice makes and receives intelligent customer calls for
+                you. It handles support, qualifies leads, confirms orders and
+                appointments, and passes the call to your team when a human is
+                needed.
+              </p>
+
+              <ul class="vz-features">
+                <li class="vz-feature">
+                  <span class="vz-ico"><i class="bi bi-chat-heart"></i></span
+                  >Natural AI Conversations
+                </li>
+                <li class="vz-feature">
+                  <span class="vz-ico"><i class="bi bi-clock-history"></i></span
+                  >24/7 Voice Support
+                </li>
+                <li class="vz-feature">
+                  <span class="vz-ico"><i class="bi bi-bullseye"></i></span
+                  >Smart Lead Qualification
+                </li>
+                <li class="vz-feature">
+                  <span class="vz-ico"
+                    ><i class="bi bi-person-lines-fill"></i></span
+                  >Human Handoff
+                </li>
+              </ul>
+
+              <div class="vz-cta d-flex flex-wrap gap-3">
+               
+                <a
+                  href="https://calendly.com/engees/schedule-a-demo"
+                  class="btn vz-btn vz-btn-ghost"
+                  >Book a Demo</a
+                >
+              </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="col-lg-6">
+              <div class="vz-call-wrap">
+                <article
+                  class="vz-call"
+                  aria-label="Live AI voice call example"
+                >
+                  <div class="vz-call-top">
+                    <span class="vz-live">LIVE</span>
+                    <span class="vz-timer"
+                      ><i class="bi bi-telephone-fill"></i
+                      ><span id="vzTimer">02:18</span></span
+                    >
+                  </div>
+
+                  <div class="vz-agent">
+                    <div class="vz-avatar" aria-hidden="true">
+                      <i class="bi bi-robot"></i>
+                    </div>
+                    <div>
+                      <div class="vz-agent-name">11za AI Voice</div>
+                      <div class="vz-status" aria-live="polite">
+                        <span class="vz-dot"></span
+                        ><span id="vzStatus">AI is speaking...</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="vz-wave" id="vzWave" aria-hidden="true"></div>
+
+                  <div class="vz-customer">
+                    <span class="vz-cav">R</span>
+                    <span>On call with <strong>Rahul Mehta</strong></span>
+                  </div>
+
+                  <div
+                    class="vz-transcript"
+                    id="vzTranscript"
+                    aria-live="polite"
+                  ></div>
+
+                  <div class="vz-controls">
+                    <button
+                      class="vz-ctrl"
+                      type="button"
+                      id="vzMic"
+                      aria-label="Microphone"
+                    >
+                      <i class="bi bi-mic-fill"></i>
+                    </button>
+                    <button
+                      class="vz-ctrl"
+                      type="button"
+                      id="vzMute"
+                      aria-label="Mute"
+                      aria-pressed="false"
+                    >
+                      <i class="bi bi-volume-up-fill"></i>
+                    </button>
+                    <button
+                      class="vz-ctrl vz-end"
+                      type="button"
+                      id="vzEnd"
+                      aria-label="End call"
+                    >
+                      <i class="bi bi-telephone-x-fill"></i>
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        (function () {
+          var root = document.getElementById("ai-voice");
+          if (!root) return;
+
+          /* Waveform bars: varied heights/delays so it looks like real speech */
+          var wave = document.getElementById("vzWave");
+          for (var i = 0; i < 36; i++) {
+            var b = document.createElement("span");
+            b.style.animationDuration =
+              (0.7 + Math.random() * 0.9).toFixed(2) + "s";
+            b.style.animationDelay = (-Math.random() * 1.5).toFixed(2) + "s";
+            b.style.maxHeight = (35 + Math.random() * 65).toFixed(0) + "%";
+            wave.appendChild(b);
+          }
+
+          /* Call timer (starts at 02:18) */
+          var seconds = 138,
+            timerEl = document.getElementById("vzTimer"),
+            ticking = true;
+          function fmt(s) {
+            return (
+              String(Math.floor(s / 60)).padStart(2, "0") +
+              ":" +
+              String(s % 60).padStart(2, "0")
+            );
+          }
+          var tick = setInterval(function () {
+            if (ticking) {
+              seconds++;
+              timerEl.textContent = fmt(seconds);
+            }
+          }, 1000);
+
+          /* Conversation script */
+          var script = [
+            {
+              who: "ai",
+              name: "AI Voice",
+              text: "Hi Rahul, I'm calling from 11za. You recently showed interest in our WhatsApp automation platform. Can I help you with any questions?",
+            },
+            {
+              who: "cu",
+              name: "Rahul",
+              text: "Yes, I'd like to know how the automation works.",
+            },
+            {
+              who: "ai",
+              name: "AI Voice",
+              text: "Absolutely. I can explain the features or connect you with our sales team.",
+            },
+          ];
+          var box = document.getElementById("vzTranscript");
+          var statusEl = document.getElementById("vzStatus");
+          var timeouts = [],
+            ended = false;
+
+          function later(fn, ms) {
+            timeouts.push(setTimeout(fn, ms));
+          }
+          function setSpeaking(isAI) {
+            statusEl.textContent = isAI
+              ? "AI is speaking..."
+              : "Listening to Rahul...";
+            wave.classList.toggle("is-idle", !isAI);
+          }
+          function addMsg(m) {
+            var d = document.createElement("div");
+            d.className = "vz-msg " + m.who;
+            var s = document.createElement("small");
+            s.textContent = m.name;
+            d.appendChild(s);
+            d.appendChild(document.createTextNode(m.text));
+            box.appendChild(d);
+          }
+          function play() {
+            box.innerHTML = "";
+            ended = false;
+            ticking = true;
+            var t = 300;
+            script.forEach(function (m, i) {
+              later(function () {
+                setSpeaking(m.who === "ai");
+                if (m.who === "ai") {
+                  var typing = document.createElement("div");
+                  typing.className = "vz-typing";
+                  typing.innerHTML = "<i></i><i></i><i></i>";
+                  box.appendChild(typing);
+                  later(function () {
+                    typing.remove();
+                    addMsg(m);
+                  }, 700);
+                } else {
+                  addMsg(m);
+                }
+              }, t);
+              t += (m.who === "ai" ? 700 : 0) + 2600;
+            });
+            later(function () {
+              setSpeaking(true);
+            }, t);
+            later(play, t + 7000); /* loop the demo */
+          }
+          play();
+
+          /* Controls */
+          var mic = document.getElementById("vzMic"),
+            mute = document.getElementById("vzMute"),
+            end = document.getElementById("vzEnd");
+          mic.addEventListener("click", function () {
+            mic.classList.toggle("is-on");
+          });
+          mute.addEventListener("click", function () {
+            var on = mute.classList.toggle("is-on");
+            mute.setAttribute("aria-pressed", on);
+            mute.firstElementChild.className = on
+              ? "bi bi-volume-mute-fill"
+              : "bi bi-volume-up-fill";
+          });
+          end.addEventListener("click", function () {
+            if (ended) {
+              play();
+              end.firstElementChild.className = "bi bi-telephone-x-fill";
+              end.setAttribute("aria-label", "End call");
+              return;
+            }
+            ended = true;
+            ticking = false;
+            timeouts.forEach(clearTimeout);
+            timeouts = [];
+            statusEl.textContent = "Call ended — tap to replay";
+            wave.classList.add("is-idle");
+            end.firstElementChild.className = "bi bi-arrow-repeat";
+            end.setAttribute("aria-label", "Replay demo call");
+          });
+
+          /* Pause work when the section is off-screen */
+          if ("IntersectionObserver" in window) {
+            new IntersectionObserver(function (e) {
+              root.querySelector(".vz-call").style.animationPlayState = e[0]
+                .isIntersecting
+                ? "running"
+                : "paused";
+            }).observe(root);
+          }
+        })();
+      </script>
+      <!-- ==================== INTEGRATIONS ==================== -->
+      <section id="integrations" class="section section-alt" data-aos="fade-up">
+        <div class="container">
+          <div class="sec-head text-center mx-auto">
+            <p class="chapter-label justify-content-center reveal">Integrations</p>
+            <h2 class="font-heading reveal" data-delay="0.08">
+              Connect 11za With the Tools You Already Use
+            </h2>
+            <p class="sub reveal" data-delay="0.16">
+              Bring WhatsApp communication into your existing business workflow.
+              Connect 11za with platforms such as:
+            </p>
+          </div>
+          <div class="int-grid" data-testid="integrations-category-grid">
+            <div class="reveal">
+              <article class="int-card">
+                <div class="int-logo">
+                  <img src="assets/images/pabbly.png" alt="Pabbly" />
+                </div>
+                <h3 class="font-heading">Pabbly</h3>
+              </article>
+            </div>
+
+            <div class="reveal" data-delay="0.08">
+              <article class="int-card">
+                <div class="int-logo">
+                  <img src="assets/images/shiprocket.png" alt="Shiprocket" />
+                </div>
+                <h3 class="font-heading">Shiprocket</h3>
+              </article>
+            </div>
+
+            <div class="reveal" data-delay="0.16">
+              <article class="int-card">
+                <div class="int-logo">
+                  <img src="assets/images/calendly.png" alt="Calendly" />
+                </div>
+                <h3 class="font-heading">Calendly</h3>
+              </article>
+            </div>
+
+            <div class="reveal">
+              <article class="int-card">
+                <div class="int-logo">
+                  <img src="assets/images/ic_tallyprime.png" alt="TallyPrime" />
+                </div>
+                <h3 class="font-heading">TallyPrime</h3>
+              </article>
+            </div>
+
+            <div class="reveal" data-delay="0.08">
+              <article class="int-card">
+                <div class="int-logo">
+                  <img
+                    src="assets/images/ic_woocommerc.png"
+                    alt="WooCommerce"
+                  />
+                </div>
+                <h3 class="font-heading">WooCommerce</h3>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <style>
+        .video-section {
+          padding: 50px;
+          background: radial-gradient(circle at 20% 20%, rgba(134, 239, 172, 0.18), transparent 25%), radial-gradient(circle at 80% 80%, rgba(134, 239, 172, 0.15), transparent 25%), #111827;
+        }
+      </style>
+      <section class="video-section position-relative">
+        <div class="container">
+          <div class="hero-mock-wrap col-lg-9 mx-auto text-center" data-testid="hero-dashboard-preview">
+            <div
+              style="
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                border-radius: inherit;
+              "
+            >
+              <iframe
+                src="https://www.youtube.com/embed/fvNMMzVcy60?&mute=1&loop=1&playlist=fvNMMzVcy60&modestbranding=1"
+                title="Send Your E-commerce order updates to your customer on WhatsApp | 11za"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border: none;
+                "
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== AUTOMATION WORKFLOW ==================== -->
+      <!-- <section
+        id="automation"
+        class="section section-alt"
+        style="overflow: hidden"
+      >
+        <div class="container">
+          <div class="sec-head text-center mx-auto">
+            <p class="chapter-label justify-content-center reveal">Automation</p>
+            <h2 class="font-heading reveal" data-delay="0.08">
+              From first message to closed deal — on autopilot
+            </h2>
+            <p class="sub reveal" data-delay="0.16">
+              Watch a conversation travel through 11za. Every step automatic,
+              every handoff instant.
+            </p>
+          </div>
+          <div
+            class="wf-wrap"
+            data-testid="automation-workflow-diagram"
+            data-wf
+          >
+            <div class="wf-line" aria-hidden="true">
+              <div class="wf-progress" data-wf-progress></div>
+            </div>
+            <div class="wf-steps">
+              <div class="reveal">
+                <div class="wf-step">
+                  <span class="wf-dot" aria-hidden="true"></span>
+                  <div class="wf-half">
+                    <div class="wf-card">
+                      <div class="meta">
+                        <span class="num">01</span><span class="rule"></span>
+                      </div>
+                      <h3 class="font-heading">Customer messages you</h3>
+                      <p>A query lands on your business WhatsApp number.</p>
+                    </div>
+                  </div>
+                  <div class="wf-half" aria-hidden="true"></div>
+                </div>
+              </div>
+              <div class="reveal" data-delay="0.05">
+                <div class="wf-step dir-r">
+                  <span class="wf-dot" aria-hidden="true"></span>
+                  <div class="wf-half">
+                    <div class="wf-card">
+                      <div class="meta">
+                        <span class="num">02</span><span class="rule"></span>
+                      </div>
+                      <h3 class="font-heading">WhatsApp Platform</h3>
+                      <p>
+                        Delivered securely over the official WhatsApp Business
+                        API.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wf-half" aria-hidden="true"></div>
+                </div>
+              </div>
+              <div class="reveal" data-delay="0.1">
+                <div class="wf-step">
+                  <span class="wf-dot accent" aria-hidden="true"><i></i></span>
+                  <div class="wf-half">
+                    <div class="wf-card accent">
+                      <div class="meta">
+                        <span class="num">03</span><span class="rule"></span>
+                      </div>
+                      <h3 class="font-heading">11za Automation</h3>
+                      <p>
+                        Your workflow triggers instantly — no agent required.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wf-half" aria-hidden="true"></div>
+                </div>
+              </div>
+              <div class="reveal" data-delay="0.15">
+                <div class="wf-step dir-r">
+                  <span class="wf-dot accent" aria-hidden="true"><i></i></span>
+                  <div class="wf-half">
+                    <div class="wf-card accent">
+                      <div class="meta">
+                        <span class="num">04</span><span class="rule"></span>
+                      </div>
+                      <h3 class="font-heading">AI / Chatbot</h3>
+                      <p>
+                        FAQs answered, intent understood, details collected.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wf-half" aria-hidden="true"></div>
+                </div>
+              </div>
+              <div class="reveal" data-delay="0.2">
+                <div class="wf-step">
+                  <span class="wf-dot" aria-hidden="true"></span>
+                  <div class="wf-half">
+                    <div class="wf-card">
+                      <div class="meta">
+                        <span class="num">05</span><span class="rule"></span>
+                      </div>
+                      <h3 class="font-heading">Lead qualified</h3>
+                      <p>
+                        The contact is scored, tagged and synced to your CRM.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wf-half" aria-hidden="true"></div>
+                </div>
+              </div>
+              <div class="reveal" data-delay="0.25">
+                <div class="wf-step dir-r">
+                  <span class="wf-dot" aria-hidden="true"></span>
+                  <div class="wf-half">
+                    <div class="wf-card">
+                      <div class="meta">
+                        <span class="num">06</span><span class="rule"></span>
+                      </div>
+                      <h3 class="font-heading">Sales team alerted</h3>
+                      <p>
+                        The right agent gets the chat with full context
+                        attached.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wf-half" aria-hidden="true"></div>
+                </div>
+              </div>
+              <div class="reveal" data-delay="0.3">
+                <div class="wf-step">
+                  <span class="wf-dot accent" aria-hidden="true"><i></i></span>
+                  <div class="wf-half">
+                    <div class="wf-card accent">
+                      <div class="meta">
+                        <span class="num">07</span><span class="rule"></span>
+                      </div>
+                      <h3 class="font-heading">Conversion</h3>
+                      <p>
+                        Faster replies, warmer follow-ups, more closed deals.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="wf-half" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- ==================== USE CASES ==================== -->
+      <!-- <section id="usecases" class="section">
+        <div class="container">
+          <div class="sec-head text-center mx-auto">
+            <p class="chapter-label justify-content-center reveal">Solutions</p>
+            <h2 class="font-heading reveal" data-delay="0.08">
+              WhatsApp for Every Stage<span style="color: #09AF72;"> of Your Customer Journey</h2></span>
+            </h2>
+            <p class="sub reveal" data-delay="0.16">
+              Whether you're acquiring leads, closing sales or supporting existing customers, 11za helps you communicate through the channel your customers already use.
+            </p>
+          </div>
+          <div class="uc-grid" data-testid="usecases-industry-grid">
+            <div class="reveal">
+              <article class="uc-card" data-testid="usecase-card-e-commerce">
+                <div class="top">
+                  <span class="uc-ic"
+                    ><svg class="ic ic-19t">
+                      <use href="#i-shopping-cart" /></svg></span
+                  ><svg class="ic uc-arrow">
+                    <use href="#i-arrow-up-right" />
+                  </svg>
+                </div>
+                <h3 class="font-heading">E-commerce</h3>
+                <p>
+                 Send order updates, product information, delivery notifications and abandoned-cart messages.
+                </p>
+                <span class="uc-pill">Turn conversations into conversions.</span>
+              </article>
+            </div>
+            <div class="reveal" data-delay="0.07">
+              <article class="uc-card" data-testid="usecase-card-education">
+                <div class="top">
+                  <span class="uc-ic"
+                    ><svg class="ic ic-19t">
+                      <use href="#i-graduation-cap" /></svg></span
+                  ><svg class="ic uc-arrow">
+                    <use href="#i-arrow-up-right" />
+                  </svg>
+                </div>
+                <h3 class="font-heading">Education</h3>
+                <p>
+                  Capture enquiries, answer questions and follow up with prospective students.
+                </p>
+                <span class="uc-pill">Turn enquiries into admissions.</span>
+              </article>
+            </div>
+            <div class="reveal" data-delay="0.14">
+              <article class="uc-card" data-testid="usecase-card-healthcare">
+                <div class="top">
+                  <span class="uc-ic"
+                    ><svg class="ic ic-19t">
+                      <use href="#i-heart-pulse" /></svg></span
+                  ><svg class="ic uc-arrow">
+                    <use href="#i-arrow-up-right" />
+                  </svg>
+                </div>
+                <h3 class="font-heading">Healthcare</h3>
+                <p>
+                  Manage appointment reminders, notifications and customer support.
+                </p>
+                <span class="uc-pill">Keep customers informed and connected.</span>
+              </article>
+            </div>
+            <div class="reveal" data-delay="0.21">
+              <article class="uc-card" data-testid="usecase-card-real-estate">
+                <div class="top">
+                  <span class="uc-ic"
+                    ><svg class="ic ic-19t">
+                      <use href="#i-building" /></svg></span
+                  ><svg class="ic uc-arrow">
+                    <use href="#i-arrow-up-right" />
+                  </svg>
+                </div>
+                <h3 class="font-heading">Real Estate</h3>
+                <p>
+                  Capture property enquiries, qualify leads and coordinate follow-ups.
+                </p>
+                <span class="uc-pill">Turn enquiries into site visits.</span>
+              </article>
+            </div>
+            <div class="reveal" data-delay="0.07">
+              <article class="uc-card" data-testid="usecase-card-travel">
+                <div class="top">
+                  <span class="uc-ic"
+                    ><svg class="ic ic-19t"><use href="#i-plane" /></svg></span
+                  ><svg class="ic uc-arrow">
+                    <use href="#i-arrow-up-right" />
+                  </svg>
+                </div>
+                <h3 class="font-heading">Travel</h3>
+                <p>
+                  Share booking confirmations, travel updates and customer assistance through WhatsApp.
+                </p>
+                <span class="uc-pill">Keep travellers connected at every step.</span>
+              </article>
+            </div>
+            <div class="reveal" data-delay="0.14">
+              <article class="uc-card" data-testid="usecase-card-retail">
+                <div class="top">
+                  <span class="uc-ic"
+                    ><svg class="ic ic-19t"><use href="#i-store" /></svg></span
+                  ><svg class="ic uc-arrow">
+                    <use href="#i-arrow-up-right" />
+                  </svg>
+                </div>
+                <h3 class="font-heading">Retail</h3>
+                <p>
+                  Share catalogues, promotions, product updates and customer communications.
+                </p>
+                <span class="uc-pill">Bring your store closer to your customers.</span>
+              </article>
+            </div>
+            
+          </div>
+        </div>
+      </section> -->
+<!-- ==================== PRICING ==================== -->
+      <section id="pricing" class="section section-alt" data-aos="fade-up">
+        <div class="container">
+          <div class="sec-head text-center mx-auto">
+            <p class="chapter-label justify-content-center reveal">Pricing</p>
+            <h2 class="font-heading reveal" data-delay="0.08">
+              Simple, honest pricing — sized to your business
+            </h2>
+            <p class="sub reveal" data-delay="0.16">
+              No one-size-fits-all plans. 11za pricing depends on your team size
+              and requirements, so you only pay for what you need.
+            </p>
+          </div>
+          <div class="pr-grid" data-testid="pricing-plans-container">
+            <div class="reveal">
+              <div class="pr-dark">
+                <div class="dots dot-grid-dark" aria-hidden="true"></div>
+                <div class="blob" aria-hidden="true"></div>
+                <span class="chip-dark">11za Platform</span>
+                <h3 class="font-heading">Talk to Sales</h3>
+                <p class="sub">
+                  Get a plan tailored to your team — inbox agents, automation,
+                  campaigns, chatbots, integrations and onboarding support
+                  included.
+                </p>
+                <ul class="pr-list ps-0">
+                  <li>
+                    <span class="ck"
+                      ><svg class="ic"><use href="#i-check" /></svg></span
+                    >Shared team inbox on one number
+                  </li>
+                  <li>
+                    <span class="ck"
+                      ><svg class="ic"><use href="#i-check" /></svg></span
+                    >Automation, chatbots &amp; campaigns
+                  </li>
+                  <li>
+                    <span class="ck"
+                      ><svg class="ic"><use href="#i-check" /></svg></span
+                    >Free onboarding &amp; team training
+                  </li>
+                  <li>
+                    <span class="ck"
+                      ><svg class="ic"><use href="#i-check" /></svg></span
+                    >Dedicated support group
+                  </li>
+                </ul>
+                <a
+                  href="https://calendly.com/engees/schedule-a-demo"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="btn btn-light"
+                  data-testid="pricing-talk-to-sales-btn"
+                  >Talk to Sales
+                  </a>
+              </div>
+            </div>
+            <div class="reveal" data-delay="0.12">
+              <div class="pr-light">
+                <span class="chip-light">Meta Messaging Charges</span>
+                <h3 class="font-heading">Transparent, pay-as-you-go</h3>
+                <p class="sub">
+                  Meta charges per 24-hour conversation, billed by category at
+                  country-specific rates. These pass through to Meta — 11za
+                  doesn't mark them up.
+                </p>
+                <div class="meta-cats">
+                  <div>
+                    <p class="c1">Marketing</p>
+                    <p class="c2">per-conversation</p>
+                  </div>
+                  <div>
+                    <p class="c1">Utility</p>
+                    <p class="c2">per-conversation</p>
+                  </div>
+                  <div>
+                    <p class="c1">Authentication</p>
+                    <p class="c2">per-conversation</p>
+                  </div>
+                  <div>
+                    <p class="c1">Service</p>
+                    <p class="c2">per-conversation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================================
+     LATEST CASE STUDIES
+================================ -->
+      <section class="latest-case-studies py-5">
+        <div class="container py-lg-5">
+          <div class="row align-items-end mb-5">
+            <div class="col-lg-8">
+              <span class="cs-section-label"> CASE STUDIES </span>
+
+              <h2 class="font-heading cs-section-title mt-3 mb-3">
+                See how businesses are
+                <span>growing with 11za</span>
+              </h2>
+
+              <p class="cs-section-desc mb-0">
+                Discover how businesses use WhatsApp automation, shared inboxes
+                and powerful integrations to improve the way they connect with
+                customers.
+              </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+              <a href="#cta" class="cs-bottom-button">
+                Explore all case studies
+              </a>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <article class="cs-card">
+                <a
+                  href="https://youtu.be/rAi-WeN00Cc" target="_blank"
+                  class="cs-image-link"
+                >
+                  <img
+                    src="assets/images/case-study-snap.png"
+                    alt=""
+                    class="w-100 h-100"
+                  />
+                
+
+                <div class="cs-card-body">
+                  <h3 class="font-heading cs-card-title">
+                    Customised Checkout Flow for ScrapBazar.in
+                  </h3>
+                </div>
+                </a>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <article class="cs-card">
+                <a
+                  href="https://youtu.be/fRsfMtJKa3Q"
+                  class="cs-image-link"
+                >
+                  <img
+                    src="assets/images/case-study-solar.png"
+                    alt=""
+                    class="w-100 h-100"
+                  />
+               
+
+                <div class="cs-card-body">
+                  <h3 class="font-heading cs-card-title">
+                    Connect with your Indiamart Leads directly on WhatsApp
+                  </h3>
+                </div>
+                 </a>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <article class="cs-card">
+                <a
+                  href="https://youtu.be/ag4DiJn6atE"
+                  class="cs-image-link"
+                >
+                  <img
+                    src="assets/images/case-study-facebook.png"
+                    alt=""
+                    class="w-100 h-100"
+                  />
+               
+
+                <div class="cs-card-body">
+                  <h3 class="font-heading cs-card-title">
+                    Get your Facebook Leads directly to WhatsApp
+                  </h3>
+                </div>
+                 </a>
+              </article>
+            </div>
+          </div>
+
+          <div class="text-center mt-5"></div>
+        </div>
+      </section>
+
+      
+
+      <!-- =========================================================
+     CTA
+========================================================= -->
+      <section class="cta-section" data-aos="fade-up">
+        <div class="container">
+          <div class="cta-box">
+            <h2 class="font-heading">Ready to simplify WhatsApp communication?</h2>
+            <p>
+              Bring your customer conversations, team and automation together in
+              one platform.<br />
+              Start with 11za today.
+            </p>
+            <p></p>
+
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a href="#" class="btn btn-primary btn-lg"> Get Started </a>
+
+              <a
+                href="https://calendly.com/engees/schedule-a-demo"
+                class="btn btn-outline-light btn-lg"
+              >
+                Book a 1-on-1 Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="api-partner-section overflow-hidden">
+        <style>
+          .api-partner{
+            padding-top: 25px;
+            padding-bottom: 25px;
+            text-align: center;
+            font-size: 20px;
+          }
+          .ap-1 {
+            background-color: #111827;
+            color :white;
+          }
+          .ap-2 {
+            background-color: #09AF72;
+            color: white;
+
+          }
+        </style>
+        <div class="row">
+
+          <div class="col-lg-6 api-partner ap-1 d-flex align-items-center justify-content-center gap-2" >
+             <div>
+                <img src="assets/images/meta-logo.png" alt="" style="height: 30px;">
+              </div>
+            <div>
+              Meta Tech Partner
+            </div>
+          </div>
+          <div class="col-lg-6 api-partner ap-2 px-4 px-sm-0">
+            <div class="d-flex gap-2 align-items-center justify-content-center" data-aos="zoom-in"> 
+
+              <div>
+                <!-- <img src="assets/images/whatsapp-black.svg" alt="" style="height: 30px;"> -->
+                <img src="assets/images/whatsapp-white.svg" alt="" style="height: 30px;">
+              </div>
+              <div class="" >
+                Powered by Official <strong>WhatsApp Business API</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- =========================
+       FOOTER
+  ========================== -->
+    <footer class="position-relative">
+      <style>
+        .startup-img img {
+          width: 200px;
+        }
+        .whatsapp-icon {
+          position: fixed;
+          left: 33px;
+          bottom: 27px;
+          z-index: 999;
+          width: 60px;
+        }
+      </style>
+      <div class="footer-layer-effect"></div>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">11<span>za</span>.</div>
+            <div>1 Company. 1 Chat.</div>
+            <p>
+              11za observed the need for an influential yet simple platform with
+              clear pricing for business to hold WhatsApp Business efficiently
+              in local market. WhatsApp is something that is used by everyone,
+              both customer and vendor.
+            </p>
+            <div>
+              <div class="startup-img">
+                <img src="assets/images/startupindia.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="font-heading">Useful Links</h4>
+
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Pricing</a>
+            <a href="#">Integrations</a>
+            <a href="#">Solutions</a>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="font-heading">Other Links</h4>
+            <a href="blog.html">Blogs</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="knowledge-series.html">Knowledge Series</a>
+            <!-- <a href="#">Api Documentation</a>
+            <a href="#">11za Documentation</a> -->
+          </div>
+
+          <div class="footer-column">
+            <h4 class="font-heading">Contact Us</h4>
+
+            <a href="#"
+              ><a href="tel:(+91) 97266 54060"
+                ><i class="fa-solid fa-phone me-3"></i> (+91) 97266 54060</a
+              ></a
+            >
+            <a href="mailto:hello@11za.com"
+              ><i class="fa-solid fa-envelope me-3"></i> hello@11za.com</a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-clock me-3"></i> Mon - Sat | 10am - 7pm</a
+            >
+          </div>
+          <!-- App / Platform Badges Section -->
+        </div>
+        <div class="footer-apps w-100 d-lg-flex justify-content-end">
+          <div class="app-badges d-lg-flex gap-3 align-items-center">
+            <div class="mb-2">
+              <a
+                href="https://apps.apple.com/in/app/11za/id6443972158"
+                target="_blank"
+                aria-label="Download on App Store"
+              >
+                <img
+                  src="assets/images/googleplay.png"
+                  alt="Download on App Store"
+                 class=""
+                />
+              </a>
+            </div>
+            <div class="mb-2">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.engees11za"
+                target="_blank"
+                aria-label="Get it on Google Play"
+              >
+                <img
+                  src="assets/images/appstore.png"
+                  alt="Get it on Google Play"
+                 class=""
+                />
+              </a>
+            </div>
+            <div class="mb-2">
+              <a
+                href="https://apps.apple.com/in/app/11za/id6443972158"
+                target="_blank"
+                aria-label="Download on App Store"
+              >
+                <img
+                  src="assets/images/woo.png"
+                  alt="Download on App Store"
+                 class=""
+                />
+              </a>
+            </div>
+            <div class="mb-2">
+              <a
+                href="https://apps.shopify.com/11za-waba-api"
+                target="_blank"
+                aria-label="Get it on Google Play"
+              >
+                <img
+                  src="assets/images/shopify.png"
+                  alt="Get it on Google Play"
+                 class=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span> © 2026 11za. All rights reserved. </span>
+
+          <div>
+            <ul
+              class="social-nav widget social-widget d-flex align-items-center gap-3 ps-0"
+            >
+              <li>
+                <a href="https://www.linkedin.com/company/11za" target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/11zaofficial" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/11zaofficial/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/11zaofficial/" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="whatsapp-icon">
+      <a href="https://wa.me/919726654060" target="_blank">
+        <img
+          width="60"
+          height="60"
+          src="assets/images/whatsapp.png"
+          alt="whatsapp-icon"
+        />
+      </a>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="assets/js/script.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("[data-nav]");
+
+        if (!header) return;
+
+        function updateHeader() {
+          header.classList.toggle("scrolled", window.scrollY > 30);
+        }
+
+        updateHeader();
+
+        window.addEventListener("scroll", updateHeader, { passive: true });
+      });
+    </script>
+  </body>
+</html>
