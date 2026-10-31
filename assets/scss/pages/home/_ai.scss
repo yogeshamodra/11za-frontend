@@ -1,0 +1,84 @@
+/* ============================================================ AI SECTION */
+.ai {
+    position: relative;
+    overflow: hidden;
+    background: var(--dark);
+}
+
+.ai .dots {
+    position: absolute;
+    inset: 0;
+}
+
+.ai .blob {
+    position: absolute;
+    top: -96px;
+    right: 0;
+    width: 288px;
+    height: 288px;
+    border-radius: 9999px;
+    background: rgba(16, 185, 129, 0.15);
+    filter: blur(72px);
+}
+
+.ai-grid {
+    position: relative;
+    /* display: grid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 48px; */
+}
+
+@media (min-width: 1024px) {
+    .ai-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.ai-features {
+    margin-top: 36px;
+    display: grid;
+    gap: 12px;
+}
+
+@media (min-width: 640px) {
+    .ai-features {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.ai-f {
+    height: 100%;
+    border-radius: var(--r-md);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.ai-f:hover {
+    border-color: rgba(52, 211, 153, 0.3);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.ai-f h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--slate-100);
+}
+
+.ai-f h3 .ic {
+    width: 13px;
+    height: 13px;
+    color: var(--emerald-400);
+}
+
+.ai-f p {
+    margin-top: 6px;
+    line-height: 1.625;
+    color: var(--slate-400);
+}

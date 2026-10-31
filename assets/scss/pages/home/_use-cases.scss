@@ -1,0 +1,95 @@
+/* ============================================================ USE CASES */
+.uc-grid {
+    margin-top: 56px;
+    display: grid;
+    gap: 20px;
+}
+
+@media (min-width: 640px) {
+    .uc-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .uc-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.uc-card {
+    position: relative;
+    height: 100%;
+    border-radius: var(--r-lg);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    background: #fff;
+    padding: 24px;
+    box-shadow: var(--shadow-card);
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.uc-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(110, 231, 183, 0.7);
+    box-shadow: 0 20px 25px -5px rgba(5, 150, 105, 0.08), 0 8px 10px -6px rgba(5, 150, 105, 0.05);
+}
+
+.uc-card .top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.uc-ic {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--r-md);
+    border: 1px solid var(--slate-200);
+    background: var(--slate-50);
+    color: var(--slate-600);
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.uc-card:hover .uc-ic {
+    border-color: var(--emerald-00);
+    background: var(--emerald-200);
+    color: var(--emerald-600);
+}
+
+.uc-arrow {
+    color: var(--slate-300);
+    opacity: 0;
+    transition: opacity 0.3s, color 0.3s;
+}
+
+.uc-card:hover .uc-arrow {
+    color: var(--emerald-600);
+    opacity: 1;
+}
+
+.uc-card h3 {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--slate-900);
+}
+
+.uc-card p {
+    margin-top: 6px;
+    line-height: 1.625;
+    color: var(--slate-500);
+}
+
+.uc-pill {
+    margin-top: 12px;
+    display: inline-flex;
+    border-radius: 9999px;
+    background: var(--emerald-50);
+    border: 1px solid var(--emerald-100);
+    padding: 4px 10px;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--emerald-700);
+}

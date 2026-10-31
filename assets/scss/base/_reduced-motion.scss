@@ -1,0 +1,43 @@
+/* ============================================================ REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .hero-badge-anim,
+    .hero-sub,
+    .hero-ctas,
+    .hero-mock-wrap,
+    .fcard-bar i {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .fcard-bar i {
+        width: 98%;
+    }
+
+    .marquee-track,
+    .flow-line,
+    .float-slow,
+    .float-slower,
+    .ping-soft::after {
+        animation: none;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .show-panel.show,
+    .mobile-panel.open {
+        animation: none;
+    }
+
+    .wf-progress {
+        transform: scaleY(1);
+    }
+}

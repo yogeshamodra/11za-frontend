@@ -1,0 +1,36 @@
+/* ---------- hero heading: letters fall one by one ---------- */
+.hero-letters .word {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.hero-letters .char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-1.2em);
+    animation: letterFall 0.6s var(--ease) forwards;
+    animation-delay: calc(var(--i) * 55ms + 150ms);
+}
+
+@keyframes letterFall {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.2em);
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(0.08em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-letters .char {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+}

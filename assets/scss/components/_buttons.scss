@@ -1,0 +1,81 @@
+/* ---------- buttons ---------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--r-md);
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn .ic {
+    transition: transform 0.3s;
+}
+
+.btn:hover .ic {
+    transform: translateX(4px);
+}
+
+
+.btn-primary {
+    background: #09AF72;
+    color: #fff;
+    border: 0;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background: #12813b;
+    ;
+    color: #fff;
+}
+
+
+.btn-light {
+    background: #fff;
+    color: var(--slate-900);
+}
+
+.btn-light:hover {
+    background: var(--emerald-50);
+}
+
+.btn-green {
+    border: 1px solid var(--slate-300);
+    overflow: hidden;
+
+    &:hover {
+        border: 1px solid black;
+    }
+}
+
+.btn-ghost {
+    border: 1px solid var(--slate-300);
+    background: #fff;
+    color: var(--slate-800);
+}
+
+.btn-ghost:hover {
+    border-color: rgba(16, 185, 129, 0.5);
+    color: var(--emerald-700);
+}
+
+.btn-ghost-dark {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    background: transparent;
+}
+
+.btn-ghost-dark:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

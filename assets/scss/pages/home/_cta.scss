@@ -1,0 +1,76 @@
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta-section {
+    padding: 30px 0 100px;
+}
+
+.cta-box {
+    border-radius: 28px;
+    padding: 70px 30px;
+    text-align: center;
+    color: #fff;
+    background:
+        radial-gradient(circle at 20% 20%,
+            rgba(134, 239, 172, 0.18),
+            transparent 25%),
+        radial-gradient(circle at 80% 80%,
+            rgba(134, 239, 172, 0.15),
+            transparent 25%),
+        #111827;
+}
+
+.cta-box h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+
+@media (max-width: 900px) {
+    .cta-box h2 {
+        font-size: 1.6rem;
+    }
+}
+
+.cta-box p {
+    color: #cbd5e1;
+    max-width: 600px;
+    margin: 15px auto 30px;
+}
+
+
+.section-badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 7px 15px;
+
+    border:
+        1px solid var(--emerald-200);
+
+    border-radius: 999px;
+
+    background: var(--emerald-50);
+
+    color: var(--emerald-700);
+
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+
+.badge-dot {
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--emerald-500);
+
+}

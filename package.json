@@ -1,0 +1,11 @@
+{
+  "name": "11za-frontend",
+  "private": true,
+  "scripts": {
+    "build": "sass assets/scss/main.scss assets/css/style.css --style=expanded --no-source-map",
+    "watch": "sass --watch assets/scss/main.scss:assets/css/style.css --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

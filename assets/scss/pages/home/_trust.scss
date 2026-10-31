@@ -1,0 +1,406 @@
+/* ============================================================ LOGO CLOUD */
+/* =========================
+   MODERN TRUST SECTION
+========================= */
+
+.trust {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+    /* background:
+        radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.07), transparent 38%),
+        #ffffff; */
+    /* border-top: 1px solid #eef2f7;
+    border-bottom: 1px solid #eef2f7; */
+}
+
+@media (min-width: 640px) {
+    .trust {
+        padding: 100px 0;
+    }
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: 128px;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 640px) {
+    .hero {
+        padding-top: 160px;
+    }
+}
+
+.hero .dots {
+    position: absolute;
+    inset: 0;
+}
+
+.hero h1 span {
+    color: #09AF72 !important;
+}
+
+
+.hero-inner {
+    position: relative;
+}
+
+.hero-badge-anim {
+    width: fit-content;
+    margin-inline: auto;
+    animation: fadeUp 0.6s var(--ease) both;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 9999px;
+    border: 1px solid var(--emerald-200);
+    background: var(--emerald-50);
+    padding: 6px 16px;
+    font-weight: 600;
+    color: var(--emerald-700);
+}
+
+.hero-badge .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background: var(--emerald-500);
+}
+
+.hero h1 {
+    margin-top: 28px;
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.04;
+    color: var(--slate-900);
+}
+
+.hero h1 .accent {
+    color: var(--emerald-600);
+}
+
+@media (min-width: 640px) {
+    .hero h1 {
+        font-size: 3.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 4.6rem;
+    }
+}
+
+.hero-sub {
+    margin: 24px auto 0;
+    max-width: 36rem;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.625;
+    color: var(--slate-600);
+    animation: fadeUp 0.7s var(--ease) 0.55s both;
+}
+
+@media (min-width: 640px) {
+    .hero-sub {
+        font-size: 18px;
+    }
+}
+
+.hero-ctas {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    animation: fadeUp 0.7s var(--ease) 0.7s both;
+}
+
+.hero-ctas .btn {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .hero-ctas {
+        flex-direction: row;
+    }
+
+    .hero-ctas .btn {
+        width: auto;
+    }
+}
+
+
+/* Heading */
+
+.trust-label {
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    letter-spacing: 0.14em;
+    color: black;
+}
+
+/* =========================
+   LOGO MARQUEE
+========================= */
+
+.marquee {
+    position: relative;
+    margin-top: 42px;
+    overflow: hidden;
+}
+
+/* Fade edges */
+
+.marquee::before,
+.marquee::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 140px;
+    z-index: 5;
+
+    pointer-events: none;
+}
+
+
+.marquee-track {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+    gap: 18px;
+    padding: 8px 18px;
+
+}
+
+.marquee-track .slick-slide {
+    padding: 0 20px;
+}
+
+/* Logo cards */
+
+.marquee-track img {
+    width: 170px;
+    height: 100px;
+
+
+
+    object-fit: contain;
+    flex-shrink: 0;
+
+    /* background: rgba(255, 255, 255, 0.9); */
+
+    /* border: 1px solid #edf1f5; */
+    /* border-radius: 18px; */
+}
+
+.marquee-track img:hover {
+    opacity: 1;
+    filter: grayscale(0);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+@keyframes trustMarquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* =========================
+   STATS
+========================= */
+
+.trust-stats {
+    position: relative;
+
+    max-width: 850px;
+    margin: 58px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border: 1px solid #e9eef5;
+    border-radius: 22px;
+
+    background: rgba(248, 250, 252, 0.75);
+
+    box-shadow:
+        0 12px 40px rgba(15, 23, 42, 0.045);
+
+    overflow: hidden;
+}
+
+.trust-stats .stat {
+    position: relative;
+
+    min-height: 105px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.trust-stats .stat+.stat::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 25%;
+    bottom: 25%;
+
+    width: 1px;
+
+    background: #e2e8f0;
+}
+
+.trust-stats .v {
+    display: block;
+
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.1;
+
+    letter-spacing: -0.03em;
+
+    color: #0f172a;
+}
+
+.trust-stats .l {
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    color: #64748b;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 639px) {
+
+    .trust {
+        padding: 65px 0;
+    }
+
+    .trust-label {
+        padding: 0 20px;
+        font-size: 16px;
+        letter-spacing: 0.12em;
+    }
+
+    .marquee {
+        margin-top: 32px;
+    }
+
+    .marquee::before,
+    .marquee::after {
+        width: 70px;
+    }
+
+    .marquee-track {
+        gap: 12px;
+    }
+
+    .marquee-track img {
+        /* width: 140px; */
+        height: 140px;
+
+        padding: 8px 15px;
+
+        border-radius: 15px;
+    }
+
+    .trust-stats {
+        margin: 42px 18px 0;
+
+        grid-template-columns: 1fr;
+
+        border-radius: 18px;
+    }
+
+    .trust-stats .stat {
+        min-height: 90px;
+    }
+
+    .trust-stats .stat+.stat::before {
+        top: 0;
+        bottom: auto;
+        left: 15%;
+        right: 15%;
+
+        width: auto;
+        height: 1px;
+    }
+
+    .trust-stats .v {
+        font-size: 25px;
+    }
+}
+
+/* Tab Button Styling */
+.show-tab {
+    border: none;
+    background: transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+.show-tab.active {
+    background-color: #09AF72 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+}
+
+/* Panels Switching */
+.show-panel {
+    display: none;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.show-panel.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Glow Effect */
+.blur-3xl {
+    filter: blur(80px);
+}
+
+/* Respect reduced motion */
