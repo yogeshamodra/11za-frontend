@@ -188,3 +188,37 @@
         display: none;
     }
 }
+
+/* let the three columns shrink so the board never pushes past the screen */
+.int-board {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.int-tile {
+    min-width: 0;
+    overflow: hidden;
+
+    strong,
+    span {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 575px) {
+    .int-tile {
+        padding: 4px;
+        border-radius: 14px;
+
+        img {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 2px;
+        }
+
+        strong { font-size: 0.72rem; }
+        span { font-size: 0.6rem; line-height: 1.2; }
+    }
+
+    .int-more i { font-size: 1.3rem; }
+}

@@ -165,3 +165,11 @@
 .tm-google:not([hidden]) {
     margin-top: 40px;
 }
+
+@media (max-width: 575px) {
+    .tm-mark {
+        top: 4px;
+        right: 12px;
+        font-size: 4rem;
+    }
+}

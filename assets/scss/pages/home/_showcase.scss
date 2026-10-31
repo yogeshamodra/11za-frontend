@@ -112,3 +112,21 @@
     animation: panelIn 0.35s var(--ease);
     height: 600px;
 }
+
+/* mobile: show all four tabs as a 2 x 2 grid instead of a cut-off scroll row */
+@media (max-width: 600px) {
+    .show-tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        width: 100%;
+        overflow: visible;
+        border-radius: 24px !important;
+    }
+
+    .show-tab {
+        justify-content: center;
+        padding: 10px 12px !important;
+        flex: initial;
+    }
+}

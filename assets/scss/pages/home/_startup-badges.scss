@@ -8,3 +8,9 @@ bottom: 27px;
 z-index: 999;
 width: 60px;
 }
+
+@media (max-width: 767px) {
+    .footer-brand .startup-img {
+        margin: 20px 0 28px;
+    }
+}

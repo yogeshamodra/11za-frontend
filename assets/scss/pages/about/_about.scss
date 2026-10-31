@@ -680,3 +680,20 @@
     line-height: 1;
     pointer-events: none;
 }
+
+/* Bootstrap rows with large gutters (g-5) stick out past the container on small
+   screens; clip them so the page never scrolls sideways. */
+.about-hero,
+.about-stats,
+.about-section {
+    overflow-x: clip;
+}
+
+/* mobile: team photos two per row, smaller names */
+@media (max-width: 575px) {
+    .team-card .team-info {
+        padding: 12px 8px;
+
+        h3 { font-size: 1rem; }
+    }
+}
